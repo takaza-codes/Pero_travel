@@ -1,0 +1,43 @@
+$main-font: "Montserrat", sans-serif;
+$main-font-size: 12px; 
+$main-font-weight: 500;
+$secondary-font-size: 18px;
+$secondary-font-weight: 700;
+
+// вот это более-менее похожий курсив для "вместе с" на баннере:
+$secondary-font: "Great Vibes", sans-serif;
+
+
+$main-color: black;
+$primary-color: #0499DD;
+$subtitle-color: #FFC700;
+$button-text-color: white;
+$button-color: linear-gradient(to right, #0499DD, #17C1BC);
+$background-color: #EDEDED;
+
+
+//миксин для кнопок: шрифт в основном 12 на них, насколько я вижу, так что его прописала, но кое-где есть 14; ширина разная
+@mixin button($button-text-color, $button-color, $secondary-font-weight, $main-font-size) {
+    background-color: $background-color;
+    border: none;
+    color: $button-text-color;
+    border-radius: 3.3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: $secondary-font-weight;
+    font-size: $main-font-size;
+}
+
+// миксин для эффектов на кнопку
+@mixin button-bg($button-color) {
+    background: $button-color;
+    &:hover {
+        cursor: pointer;
+        background:darken($button-color,15%);
+        transition: all 0.3s ease;
+    }
+    &:active {
+        background:darken($button-color,30%);
+    } 
+}
