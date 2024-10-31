@@ -18,7 +18,7 @@ $background-color: #EDEDED;
 
 //миксин для кнопок: шрифт в основном 12 на них, насколько я вижу, так что его прописала, но кое-где есть 14; ширина разная
 @mixin button($button-text-color, $button-color, $secondary-font-weight, $main-font-size) {
-    background-color: $background-color;
+    background-image: $button-color;
     border: none;
     color: $button-text-color;
     border-radius: 3.3rem;
