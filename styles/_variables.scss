@@ -27,17 +27,5 @@ $background-color: #EDEDED;
     display: inline-block;
     font-weight: $secondary-font-weight;
     font-size: $main-font-size;
-}
-
-// миксин для эффектов на кнопку
-@mixin button-bg($button-color) {
-    background: $button-color;
-    &:hover {
-        cursor: pointer;
-        background:darken($button-color,15%);
-        transition: all 0.3s ease;
-    }
-    &:active {
-        background:darken($button-color,30%);
-    } 
+    cursor: pointer;
 }
