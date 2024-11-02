@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/all_tours_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <title>Наши экскурсии</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <body>
+        <section class="top">
+            <div class="nav-box">
+                <div class="nav-cat">
+                    <button class="nav-a">автобусный тур</button>
+                    <button class="nav-b">джиппинг</button>
+                    <button class="nav-c">яхтинг</button>
+                    <button class="nav-d">каньонинг</button>
+                </div>
+                <div class="content-box">
+                    <form class="form-top">
+                        <div class="form-location">
+                            <label for="location"></label>
+                            <select id="location">
+                                <option value="abkhazia">Абхазия</option>
+                                <option value="sochi">Сочи</option>
+                                <option value="adler">Адлер</option>
+                                <option value="krasnaya-polyana">Красная поляна</option>
+                            </select>
+                        </div>
+                        <div class="form-date">
+                            <input type="date" id="date" name="trip-date"
+                            value="2024-11-10"
+                            min="2024-11-10" max="2024-12-31">
+                            </div>
+                        <div class="form-people">
+                            <label for="people"></label>
+                            <select id="people">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6 и более</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="button-top">Показать</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="tours">
+            <div class="filters">
+                <h4>Фильтры</h4>
+                <form>
+                    <div class="price-container">
+                        <h5>Стоимость</h5>
+                        <div class="price-inputs">
+                            <div id="price-min" class="price-input">1 600</div>
+                            <div id="price-max" class="price-input">4 000</div>
+                        </div>
+                        <div class="slider-container">
+                            <input type="range" min="0" max="100" value="20" class="slider slider-left" oninput="this.style.setProperty('--val-left', this.value)">
+                            <input type="range" min="0" max="100" value="80" class="slider slider-right" oninput="this.style.setProperty('--val-right', this.value)">
+                        </div>
+                    </div>
+
+                    <div class="people-selector">
+                        <h5>Количество человек</h5>
+                        <div class="buttons">
+                            <input type="radio" id="people-1" name="people" value="1">
+                            <label for="people-1">1 чел.</label>
+                            
+                            <input type="radio" id="people-2" name="people" value="2">
+                            <label for="people-2">2 чел.</label>
+                            
+                            <input type="radio" id="people-3" name="people" value="3">
+                            <label for="people-3">3 чел.</label>
+                            
+                            <input type="radio" id="people-4" name="people" value="4">
+                            <label for="people-4">4 чел.</label>
+                            
+                            <input type="radio" id="people-5" name="people" value="5">
+                            <label for="people-5">5 чел.</label>
+                            
+                            <input type="radio" id="people-6" name="people" value="6">
+                            <label for="people-6">6+ чел.</label>
+                        </div>
+                    </div>
+                    <div>
+                        <h5>Место</h5>
+                        <input type="radio" id="abkhazia" name="location" value="abkhazia">
+                        <label for="abkhazia">Абхазия</label><br>
+                        <input type="radio" id="sochi" name="location" value="sochi">
+                        <label for="sochi">Сочи</label><br>
+                        <input type="radio" id="adler" name="location" value="adler">
+                        <label for="adler">Адлер</label><br>
+                        <input type="radio" id="krasnaya-polyana" name="location" value="krasnaya-polyana">
+                        <label for="adler">Красная поляна</label>
+                    </div>
+                    <h5>Длительность</h5>
+                    <h5>Дата</h5>
+                    <button type="submit" class="button-top">Показать</button>
+                    <button type="reset" class="reset">Сбросить фильтры</button>
+                </form>
+            </div>
+            <h2>Наши туры</h2>
+            <div class="tour">
+                <div class="tour-image"><img src="../images/tour_image.svg" alt="Фото локации: Абхазия"></div>
+                <p class="tour-type">Автобусный тур</p>
+                <h3>Золотое кольцо Абхазии (из Адлера)</h3>
+                    <div class="price-adult">
+                        <div><img src="../images/price_icon.svg" alt="" class="tour-info-icon"></div>
+                        <div class="tour-info">1 618 ₽</div>
+                    </div>
+                    <div class="price-child">
+                        <div><img src="../images/price_icon.svg" alt="" class="tour-info-icon"></div>
+                        <div class="tour-info">1 412 ₽</div>
+                    </div>
+                    <div id="time">
+                        <div><img src="../images/time_icon.svg" alt="" class="tour-info-icon"></div>
+                        <div class="tour-info">2,5 часа</div>
+                    </div>
+                    <p>Взрослый билет</p>
+                    <p>Детский билет</p>
+                <p class="description">Вас ждет путешествие по "Золотому Кольцу Абхазии" на Мерседес 
+                    Спринтер (20 мест). По маршруту вас будет сопровождать 
+                    профессиональный гид. Посадка на экскурсию 
+                    осуществляется с вашего отеля или ближайшей 
+                    автобусной остановки. Пересечение границы без пересадок...</p>
+                <button class="learn-more">Подробнее</button>
+                <div class="liked"><input type="checkbox" /></div>
+            </div>
+            <div class="tour">
+                <div class="tour-image"><img src="../images/tour_image.svg" alt="Фото локации: Абхазия"></div>
+                <p class="tour-type">Автобусный тур</p>
+                <h3>Золотое кольцо Абхазии (из Адлера)</h3>
+                    <div class="price-adult">
+                        <div><img src="../images/price_icon.svg" alt="" class="tour-info-icon"></div>
+                        <div class="tour-info">1 618 ₽</div>
+                    </div>
+                    <div class="price-child">
+                        <div><img src="../images/price_icon.svg" alt="" class="tour-info-icon"></div>
+                        <div class="tour-info">1 412 ₽</div>
+                    </div>
+                    <div id="time">
+                        <div><img src="../images/time_icon.svg" alt="" class="tour-info-icon"></div>
+                        <div class="tour-info">2,5 часа</div>
+                    </div>
+                    <p>Взрослый билет</p>
+                    <p>Детский билет</p>
+                <p class="description">Вас ждет путешествие по "Золотому Кольцу Абхазии" на Мерседес 
+                    Спринтер (20 мест). По маршруту вас будет сопровождать 
+                    профессиональный гид. Посадка на экскурсию 
+                    осуществляется с вашего отеля или ближайшей 
+                    автобусной остановки. Пересечение границы без пересадок...</p>
+                <button class="learn-more">Подробнее</button>
+                <div class="liked"><input type="checkbox" /></div>
+            </div>
+            <div class="tour">
+                <div class="tour-image"><img src="../images/tour_image.svg" alt="Фото локации: Абхазия"></div>
+                <p class="tour-type">Автобусный тур</p>
+                <h3>Золотое кольцо Абхазии (из Адлера)</h3>
+                    <div class="price-adult">
+                        <div><img src="../images/price_icon.svg" alt="" class="tour-info-icon"></div>
+                        <div class="tour-info">1 618 ₽</div>
+                    </div>
+                    <div class="price-child">
+                        <div><img src="../images/price_icon.svg" alt="" class="tour-info-icon"></div>
+                        <div class="tour-info">1 412 ₽</div>
+                    </div>
+                    <div id="time">
+                        <div><img src="../images/time_icon.svg" alt="" class="tour-info-icon"></div>
+                        <div class="tour-info">2,5 часа</div>
+                    </div>
+                    <p>Взрослый билет</p>
+                    <p>Детский билет</p>
+                <p class="description">Вас ждет путешествие по "Золотому Кольцу Абхазии" на Мерседес 
+                    Спринтер (20 мест). По маршруту вас будет сопровождать 
+                    профессиональный гид. Посадка на экскурсию 
+                    осуществляется с вашего отеля или ближайшей 
+                    автобусной остановки. Пересечение границы без пересадок...</p>
+                <button class="learn-more">Подробнее</button>
+                <div class="liked"><input type="checkbox" /></div>
+            </div>
+            <div class="tour">
+                <div class="tour-image"><img src="../images/tour_image.svg" alt="Фото локации: Абхазия"></div>
+                <p class="tour-type">Автобусный тур</p>
+                <h3>Золотое кольцо Абхазии (из Адлера)</h3>
+                    <div class="price-adult">
+                        <div><img src="../images/price_icon.svg" alt="" class="tour-info-icon"></div>
+                        <div class="tour-info">1 618 ₽</div>
+                    </div>
+                    <div class="price-child">
+                        <div><img src="../images/price_icon.svg" alt="" class="tour-info-icon"></div>
+                        <div class="tour-info">1 412 ₽</div>
+                    </div>
+                    <div id="time">
+                        <div><img src="../images/time_icon.svg" alt="" class="tour-info-icon"></div>
+                        <div class="tour-info">2,5 часа</div>
+                    </div>
+                    <p>Взрослый билет</p>
+                    <p>Детский билет</p>
+                <p class="description">Вас ждет путешествие по "Золотому Кольцу Абхазии" на Мерседес 
+                    Спринтер (20 мест). По маршруту вас будет сопровождать 
+                    профессиональный гид. Посадка на экскурсию 
+                    осуществляется с вашего отеля или ближайшей 
+                    автобусной остановки. Пересечение границы без пересадок...</p>
+                <button class="learn-more">Подробнее</button>
+                <div class="liked"><input type="checkbox" /></div>
+            </div>
+        </section>
+    </body>
+    <footer>
+
+    </footer>
+</body>
+</html>
