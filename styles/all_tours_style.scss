@@ -120,7 +120,7 @@ input {
 .form-location {
     select {
         appearance: none;
-        background: url(../images/location_icon.svg);
+        background: url(../images/all_tours/location_icon.svg);
         background-repeat: no-repeat;
         background-size: 1rem;
         background-position-x: 95%;
@@ -132,7 +132,7 @@ input {
 .form-people {
     select {
         appearance: none;
-        background: url(../images/people_icon.svg);
+        background: url(../images/all_tours/people_icon.svg);
         background-repeat: no-repeat;
         background-size: 1.3rem;
         background-position-x: 95%;
@@ -215,7 +215,7 @@ h3 {
     grid-row: 4 / 5;
     align-self: center;
     padding-left: 2rem;
-    background-image: url(../images/border_line.svg);
+    background-image: url(../images/all_tours/border_line.svg);
     background-repeat: no-repeat;
     background-position-x: 0%;
     background-position-y: 50%;
