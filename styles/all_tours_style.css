@@ -140,7 +140,7 @@ input {
   background-image: linear-gradient(to right, #0499DD, #17C1BC);
   border: none;
   color: white;
-  border-radius: 3.3rem;
+  border-radius: 40px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -150,8 +150,7 @@ input {
   max-height: 4rem;
   min-height: 3rem;
   font-size: 1.2rem;
-  border-radius: 0.8rem;
-  max-width: 235px;
+  max-width: 225px;
   min-width: 14rem;
 }
 .button-top:hover {
@@ -160,11 +159,16 @@ input {
 }
 
 .tour {
+  max-height: 303px;
+  padding-right: 1rem;
   display: grid;
-  grid-template-columns: auto max-content 14% 7% 1fr;
-  grid-template-rows: 25% 7% 5% 30% 1fr;
-  -moz-column-gap: 0.2rem;
-       column-gap: 0.2rem;
+  grid-template-columns: auto max-content max-content 4% 1fr;
+  grid-template-rows: 10% 15% 7% 5% 40% 1fr;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px -2px rgba(18, 22, 33, 0.1);
 }
 .tour p {
   margin: 0;
@@ -173,23 +177,29 @@ input {
 .tour-image {
   grid-column: 1/2;
   grid-row: span 5;
-  padding-right: 3rem;
+  padding-right: 35px;
 }
 
 .tour-type {
-  padding-top: 0.5rem;
+  padding-top: 15px;
   color: #FFC700;
   font-size: 12px;
 }
 
 h3 {
-  align-self: center;
+  margin: 5px 0 10px 0;
+  align-self: start;
   font-size: 18px;
 }
 
-.tour-type, h3 {
+.tour-type {
   grid-column: 2/6;
   grid-row: 1/2;
+}
+
+h3 {
+  grid-column: 2/6;
+  grid-row: 2/3;
 }
 
 .tour-info {
@@ -204,7 +214,7 @@ h3 {
 }
 
 #time {
-  grid-column: 4/6;
+  grid-column: 5/6;
 }
 
 .tour-info-icon {
@@ -215,7 +225,7 @@ h3 {
 
 .description {
   grid-column: 2/6;
-  grid-row: 4/5;
+  grid-row: 5/6;
   align-self: center;
   padding-left: 2rem;
   background-image: url(../images/all_tours/border_line.svg);
@@ -228,18 +238,20 @@ h3 {
   background-image: linear-gradient(to right, #0499DD, #17C1BC);
   border: none;
   color: white;
-  border-radius: 3.3rem;
+  border-radius: 40px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-weight: 700;
   font-size: 12px;
   cursor: pointer;
-  max-height: 3.3rem;
-  min-height: 2.8rem;
-  max-width: 13rem;
+  max-height: 40px;
+  min-height: 35px;
+  max-width: 160px;
+  min-width: 100px;
+  padding-right: 15px;
   grid-column: 2/4;
-  grid-row: 5/6;
+  grid-row: 6/7;
 }
 .learn-more:hover {
   color: rgba(0, 0, 0, 0.5);
@@ -248,17 +260,17 @@ h3 {
 
 .liked {
   display: inline-block;
-  width: -moz-fit-content;
-  width: fit-content;
-  grid-column: 4/5;
-  grid-row: 5/6;
+  grid-column: 3/5;
+  grid-row: 6/7;
+  justify-self: end;
+  padding-right: 20px;
 }
 .liked input[type=checkbox] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  width: 3.3rem;
-  height: 3.3rem;
+  height: 40px;
+  width: 40px;
   background-image: url(../images/favorite_inactive.svg);
   background-size: cover;
   background-position: center;
@@ -266,6 +278,20 @@ h3 {
 }
 .liked input[type=checkbox]:checked {
   background-image: url(../images/favorite_active.svg);
+}
+
+.pages {
+  justify-self: center;
+}
+.pages input[type=radio] {
+  display: none;
+}
+.pages label {
+  text-align: center;
+  font-size: 1rem;
+}
+.pages input[type=radio]:checked + label {
+  color: #0499DD;
 }
 
 h4, h5 {
@@ -279,17 +305,17 @@ h4 {
 
 .price-inputs {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 10px 0 20px;
 }
 
 .price-input {
-  border: 1px solid #e6e6e6;
+  border: 1px solid #D4D4D4;
   border-radius: 20px;
-  padding: 0.5rem 1rem;
-  width: 40%;
-  text-align: center;
-  font-size: 1rem;
+  padding: 0.5rem 0.7rem;
+  width: 30%;
+  text-align: left;
+  font-size: 12px;
   color: #333;
 }
 
@@ -304,7 +330,7 @@ h4 {
        appearance: none;
   width: 100%;
   height: 8px;
-  background: #ddd;
+  background: #D4D4D4;
   outline: none;
   position: absolute;
   top: 50%;
@@ -375,12 +401,12 @@ h4 {
 
 .buttons label {
   display: inline-block;
-  padding: 10px 20px;
-  border: 2px solid #ddd;
+  padding: 0.5rem 1rem;
+  border: 1px solid #D4D4D4;
   border-radius: 20px;
   cursor: pointer;
   text-align: center;
-  font-size: 1rem;
+  font-size: 12px;
   color: #333;
   transition: background-color 0.3s, color 0.3s;
 }
@@ -399,6 +425,7 @@ h4 {
   grid-template-rows: 5% repeat(4, 1fr) 5%;
   -moz-column-gap: 3rem;
        column-gap: 3rem;
+  row-gap: 1rem;
 }
 .tours h2 {
   align-self: center;
@@ -428,14 +455,23 @@ h4 {
 }
 .filters form .location-options input {
   cursor: pointer;
+  border: #D4D4D4;
 }
-.filters form .button-top {
+.filters form .location-options label {
+  position: relative;
+  margin: 0 0 0 0.2rem;
+  line-height: 150%;
+}
+.filters form .form-buttons {
   justify-self: center;
 }
 .filters form .reset {
+  margin-top: 10px;
+  cursor: pointer;
   background-color: white;
   border: none;
   display: flex;
   align-items: flex-start;
+  gap: 5px;
   justify-self: center;
 }/*# sourceMappingURL=all_tours_style.css.map */
