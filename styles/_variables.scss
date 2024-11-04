@@ -15,6 +15,7 @@ $button-text-color: white;
 $button-color: linear-gradient(to right, #0499DD, #17C1BC);
 $background-color: #EDEDED;
 $page-background: #FBFBFB;
+$button-border-color: #D4D4D4;
 
 
 //миксин для кнопок: шрифт в основном 12 на них, насколько я вижу, так что его прописала, но кое-где есть 14; ширина разная
@@ -22,7 +23,7 @@ $page-background: #FBFBFB;
     background-image: $button-color;
     border: none;
     color: $button-text-color;
-    border-radius: 3.3rem;
+    border-radius: 40px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
