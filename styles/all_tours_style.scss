@@ -152,15 +152,11 @@ input {
     min-width: 14rem;
 }
 
-h2 {
-    color: $primary-color;
-    font-size: 2rem;
-}
-
 .tour {
     display: grid;
-    grid-template-columns: auto 12% 14% 7% 1fr;
+    grid-template-columns: auto max-content 14% 7% 1fr;
     grid-template-rows: 25% 7% 5% 30% 1fr;
+    column-gap: 0.2rem;
 
     p {
         margin: 0;
@@ -225,7 +221,7 @@ h3 {
     @include button($button-text-color, $button-color, $secondary-font-weight, $main-font-size);
     max-height: 3.3rem;
     min-height: 2.8rem;
-    width: 13rem;
+    max-width: 13rem;
     grid-column: 2 / 4;
     grid-row: 5 / 6;
 }
@@ -257,6 +253,7 @@ h4, h5 {
 
 h4 {
     color: $primary-color;
+    margin-top: 0;
 }
 
 .price-inputs {
@@ -349,7 +346,7 @@ h4 {
 .buttons {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    gap: 10px;
+    gap: 0.7rem;
 }
 
 .buttons input[type="radio"] {
@@ -373,3 +370,69 @@ h4 {
     color: white;
     border-color: $primary-color;
 }
+
+.tours {
+    max-width: 1120px;
+    margin: 0px auto;
+    display: grid; 
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 5% repeat(4, 1fr) 5%;
+    column-gap: 3rem;
+
+    h2 {
+        align-self: center;
+        margin-top: 0;
+        color: $primary-color;
+        font-size: 2rem;
+    }
+}
+
+.filters {
+    height: fit-content;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    grid-column: 1 / 2;
+    grid-row: span 6;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px -2px rgba(18, 22, 33, 0.1);
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 4rem;
+
+        h5 {
+            margin: 1rem 0 1rem 0;
+        }
+
+        .location-options {
+            
+            input {
+                cursor: pointer; 
+            }
+
+            // label {
+            //     position: relative;
+            //     margin: 0 0 0 0.2rem;
+            //     padding: 0;
+            //     line-height: 135%;
+            // }
+        }
+
+        .button-top {
+            justify-self: center;
+        }
+
+        .reset {
+            background-color: white;
+            border: none;
+            display: flex;
+            align-items: flex-start;
+            justify-self: center;
+        }
+    }
+}
+
+
+
