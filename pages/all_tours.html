@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="../styles/all_tours_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/all_tours_style.css">
     <link rel="shortcut icon" href="../images/logo.svg" type="svg/xml">
     <title>Наши экскурсии</title>
 </head>
@@ -62,53 +62,79 @@
                 <h4>Фильтры</h4>
                 <form>
                     <div class="price-container">
-                        <h5>Стоимость</h5>
-                        <div class="price-inputs">
-                            <div id="price-min" class="price-input">1 600</div>
-                            <div id="price-max" class="price-input">4 000</div>
-                        </div>
-                        <div class="slider-container">
-                            <input type="range" min="0" max="100" value="20" class="slider slider-left" oninput="this.style.setProperty('--val-left', this.value)">
-                            <input type="range" min="0" max="100" value="80" class="slider slider-right" oninput="this.style.setProperty('--val-right', this.value)">
+                        <input type="checkbox" id="checkbox-1" hidden>
+                        <label for="checkbox-1">Стоимость</label>
+                        <div class="content">
+                            <div class="more">
+                                <div class="price-inputs">
+                                    <div id="price-min" class="price-input">1 600</div>
+                                    <div id="price-max" class="price-input">4 000</div>
+                                </div>
+                                <div class="slider-container">
+                                    <input type="range" min="0" max="100" value="20" class="slider slider-left" oninput="this.style.setProperty('--val-left', this.value)">
+                                    <input type="range" min="0" max="100" value="80" class="slider slider-right" oninput="this.style.setProperty('--val-right', this.value)">
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="people-selector">
-                        <h5>Количество человек</h5>
-                        <div class="buttons">
-                            <input type="radio" id="people-1" name="people" value="1">
-                            <label for="people-1">1 чел.</label>
-                            
-                            <input type="radio" id="people-2" name="people" value="2">
-                            <label for="people-2">2 чел.</label>
-                            
-                            <input type="radio" id="people-3" name="people" value="3">
-                            <label for="people-3">3 чел.</label>
-                            
-                            <input type="radio" id="people-4" name="people" value="4">
-                            <label for="people-4">4 чел.</label>
-                            
-                            <input type="radio" id="people-5" name="people" value="5">
-                            <label for="people-5">5 чел.</label>
-                            
-                            <input type="radio" id="people-6" name="people" value="6">
-                            <label for="people-6">6+ чел.</label>
+                        <input type="checkbox" id="checkbox-2" hidden>
+                        <label for="checkbox-2">Количество человек</label>
+                        <div class="content">
+                            <div class="more">
+                                <div class="buttons">
+                                    <input type="radio" id="people-1" name="people" value="1">
+                                    <label for="people-1" class="people">1 чел.</label>
+                                    
+                                    <input type="radio" id="people-2" name="people" value="2">
+                                    <label for="people-2">2 чел.</label>
+                                    
+                                    <input type="radio" id="people-3" name="people" value="3">
+                                    <label for="people-3">3 чел.</label>
+                                    
+                                    <input type="radio" id="people-4" name="people" value="4">
+                                    <label for="people-4">4 чел.</label>
+                                    
+                                    <input type="radio" id="people-5" name="people" value="5">
+                                    <label for="people-5">5 чел.</label>
+                                    
+                                    <input type="radio" id="people-6" name="people" value="6">
+                                    <label for="people-6">6+ чел.</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="location-options">
-                        <h5>Место</h5>
-                        <!-- <input type="checkbox" id="filter-checkbox-1" class="checks">
-                        <label for="filter-checkbox-1" class="check"></label> -->
-                        <input type="radio" id="abkhazia" name="location" value="abkhazia">
-                        <label for="abkhazia">Абхазия</label><br>
-                        <input type="radio" id="sochi" name="location" value="sochi">
-                        <label for="sochi">Сочи</label><br>
-                        <input type="radio" id="adler" name="location" value="adler">
-                        <label for="adler">Адлер</label><br>
-                        <input type="radio" id="krasnaya-polyana" name="location" value="krasnaya-polyana">
-                        <label for="adler">Красная поляна</label>
+                        <input type="checkbox" id="checkbox-3" hidden>
+                        <label for="checkbox-3">Место</label>
+                        <div class="content">
+                            <div class="more">
+                                <div class="locations-list">
+                                    <input type="radio" id="abkhazia" name="location" value="abkhazia">
+                                    <label for="abkhazia">Абхазия</label><br>
+                                    <input type="radio" id="sochi" name="location" value="sochi">
+                                    <label for="sochi">Сочи</label><br>
+                                    <input type="radio" id="adler" name="location" value="adler">
+                                    <label for="adler">Адлер</label><br>
+                                    <input type="radio" id="krasnaya-polyana" name="location" value="krasnaya-polyana">
+                                    <label for="adler">Красная поляна</label>
+                                </div>
+                            </div>    
+                        </div>
                     </div>
-                    <h5>Длительность</h5>
-                    <h5>Дата</h5>
+                    <div class="duration">
+                        <input type="checkbox" id="checkbox-4" hidden>
+                        <label for="checkbox-4">Длительность</label>
+                        <div class="content"></div>
+                            <div class="more"></div>
+                    </div>
+                    <div class="date">
+                        <input type="checkbox" id="checkbox-5" hidden>
+                        <label for="checkbox-5">Дата</label>
+                        <div class="content"></div>
+                            <div class="more"></div>
+                    </div>
+
                     <div class="form-buttons">
                         <button type="submit" class="button-top">Показать</button>
                         <button type="reset" class="reset"><img src="../images/all_tours/reset-filters.svg" alt="">Сбросить фильтры</button>
