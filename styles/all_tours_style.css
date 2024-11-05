@@ -441,9 +441,6 @@ h4 {
   background-position-x: 95%;
   background-position-y: 50%;
 }
-.filters form .price-container label:hover, .filters form .people-selector label:hover, .filters form .location-options label:hover, .filters form .duration label:hover, .filters form .date label:hover {
-  color: #17C1BC;
-}
 .filters form .price-container .content, .filters form .people-selector .content, .filters form .location-options .content, .filters form .duration .content, .filters form .date .content {
   border-bottom: 1px solid #EDEDED;
   overflow: hidden;
