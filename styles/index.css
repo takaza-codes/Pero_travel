@@ -54,5 +54,6 @@ button {
 
 
 .aboutUs_text {
+    min-height: 600px;
     grid-column: 7 / 11;
 }
