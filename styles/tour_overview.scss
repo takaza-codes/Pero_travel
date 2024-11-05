@@ -1,11 +1,108 @@
-@import url(../styles/_variables.scss);
+@import "_variables.scss";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-family: $main-font;
+  font-size: 14px;
+}
+@mixin for-title {
+  font-weight: $secondary-font-weight;
+  font-size: 1.71rem;
+}
+@mixin for-text {
+  font-weight: $main-font-weight;
+  font-size: 1rem;
+}
+@mixin ticket-card {
+  width: 12rem;
+  height: 6rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 0.71rem;
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+@mixin icon-background {
+  background-color: $subtitle-color;
+  position: absolute;
+  top: -1.1rem;
+  left: -1.1rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  z-index: 0;
+}
 
 header {
   background-image: url(../images/tour_overview/изобр.svg);
+  .header_title {
+    h4 {
+      @include for-title;
+      color: $subtitle-color;
+    }
+    h1 {
+      font-weight: $secondary-font-weight;
+      font-size: 3.43rem;
+      color: white;
+    }
+  }
+  // .header_btn {
+  //   @include button();
+  // }
+}
+main {
+  .main_description {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem 1.2rem;
+    .main_description_excursion {
+      width: 30%;
+      h3 {
+        @include for-title;
+        color: $primary-color;
+        padding-bottom: 1rem;
+      }
+      p {
+        font-weight: $main-font-weight;
+        font-size: 1rem;
+      }
+    }
+    .main_description_card-wrapper {
+      position: relative;
+      .icon-background {
+        @include icon-background;
+      }
+      .ticket-card {
+        @include ticket-card;
+      }
+
+      .content {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem 0;
+        .icon {
+          height: 1.8rem;
+          width: 2rem;
+        }
+        .text {
+          .price {
+            @include for-title;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
 }
