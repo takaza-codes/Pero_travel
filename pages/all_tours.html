@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/logo.svg" type="svg/xml">
     <title>Наши экскурсии</title>
 </head>
 <body>
@@ -95,6 +96,8 @@
                     </div>
                     <div class="location-options">
                         <h5>Место</h5>
+                        <!-- <input type="checkbox" id="filter-checkbox-1" class="checks">
+                        <label for="filter-checkbox-1" class="check"></label> -->
                         <input type="radio" id="abkhazia" name="location" value="abkhazia">
                         <label for="abkhazia">Абхазия</label><br>
                         <input type="radio" id="sochi" name="location" value="sochi">
@@ -106,8 +109,10 @@
                     </div>
                     <h5>Длительность</h5>
                     <h5>Дата</h5>
-                    <button type="submit" class="button-top">Показать</button>
-                    <button type="reset" class="reset"><img src="../images/all_tours/reset-filters.svg" alt="">Сбросить фильтры</button>
+                    <div class="form-buttons">
+                        <button type="submit" class="button-top">Показать</button>
+                        <button type="reset" class="reset"><img src="../images/all_tours/reset-filters.svg" alt="">Сбросить фильтры</button>
+                    </div>
                 </form>
             </div>
             <h2>Наши туры</h2>
@@ -215,7 +220,20 @@
                 <button class="learn-more">Подробнее</button>
                 <div class="liked"><input type="checkbox" /></div>
             </div>
-            <div class="pages">1 2 ... 5</div>
+            <div class="pages">
+                <input type="radio" id="arrow-left" name="arrow">
+                <label for="arrow-left"><img src="..//images/all_tours/arrow_left.svg" alt=""></label>
+                <input type="radio" id="page-1" name="page">
+                <label for="page-1">1</label>
+                <input type="radio" id="page-2" name="page">
+                <label for="page-2">2</label>
+                <input type="radio" id="page-between" name="page">
+                <label for="page-between">...</label>
+                <input type="radio" id="page-5" name="page">
+                <label for="page-5">5</label>
+                <input type="radio" id="arrow-right" name="arrow">
+                <label for="arrow-right"><img src="..//images/all_tours/arrow_right.svg" alt=""></label>
+            </div>
         </section>
     </body>
     <footer>
