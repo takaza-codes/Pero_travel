@@ -4,12 +4,19 @@
 
 }
 
+.container-excursions {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
 .row {
     display: flex;
 }
 
 .popularExcursions_head {
     display: flex;
+
 }
 
 h3,
@@ -36,4 +43,16 @@ button {
         color: rgba(0, 0, 0, 0.5);
         opacity: 0.8;
     }
+}
+
+.aboutUs {
+    background-image: url(../images/index/1.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    back
+}
+
+
+.aboutUs_text {
+    grid-column: 7 / 11;
 }
