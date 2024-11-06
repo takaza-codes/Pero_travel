@@ -143,20 +143,19 @@ input {
 
 .form-date {
     input[type="date"]::-webkit-calendar-picker-indicator {
+        box-sizing: border-box;
         background: url(..//images/all_tours/calendar_icon.svg);
         background-size: 1.3rem;
         background-repeat: no-repeat;
         background-position-x: 95%;
         background-position-y: 50%;
-        
     }
 
-    #date {
-        padding: 0px;
+    input[type="date" i] {
+        padding-inline-start: 1rem;
+        padding-inline-end: 1rem;
     }
 }
-
-
 
 .button-top {
     @include button($button-text-color, $button-color, $secondary-font-weight, $main-font-size);
