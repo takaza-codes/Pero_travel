@@ -1,5 +1,5 @@
 $main-font: "Montserrat", sans-serif;
-$main-font-size: 12px; 
+$main-font-size: 12px;
 $main-font-weight: 500;
 $secondary-font-size: 18px;
 $secondary-font-weight: 700;
@@ -7,32 +7,35 @@ $secondary-font-weight: 700;
 // вот это более-менее похожий курсив для "вместе с" на баннере:
 $secondary-font: "Great Vibes", sans-serif;
 
-
 $main-color: black;
-$primary-color: #0499DD;
-$subtitle-color: #FFC700;
+$primary-color: #0499dd;
+$subtitle-color: #ffc700;
 $button-text-color: white;
-$button-color: linear-gradient(to right, #0499DD, #17C1BC);
-$background-color: #EDEDED;
-$page-background: #FBFBFB;
-$button-border-color: #D4D4D4;
-
+$button-color: linear-gradient(to right, #0499dd, #17c1bc);
+$background-color: #ededed;
+$page-background: #fbfbfb;
+$button-border-color: #d4d4d4;
 
 //миксин для кнопок: шрифт в основном 12 на них, насколько я вижу, так что его прописала, но кое-где есть 14; ширина разная
-@mixin button($button-text-color, $button-color, $secondary-font-weight, $main-font-size) {
-    background-image: $button-color;
-    border: none;
-    color: $button-text-color;
-    border-radius: 40px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-weight: $secondary-font-weight;
-    font-size: $main-font-size;
-    cursor: pointer;
+@mixin button(
+  $button-text-color,
+  $button-color,
+  $secondary-font-weight,
+  $main-font-size
+) {
+  background-image: $button-color;
+  border: none;
+  color: $button-text-color;
+  border-radius: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: $secondary-font-weight;
+  font-size: $main-font-size;
+  cursor: pointer;
 
-    &:hover {
-        color: rgba(0, 0, 0, 0.5);
-        opacity: 0.8;
-    }
+  &:hover {
+    color: rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+  }
 }
