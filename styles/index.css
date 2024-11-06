@@ -32,11 +32,58 @@ p {
     grid-column: 8/9;
 }
 
+.container_excursions-cards {
+    display: flex;
+    gap: 20px;
+
+}
+
+.card-body {
+    max-width: 320px;
+    color: white;
+}
 
 .card1 {
     background-image: url(../images/index/1.svg);
     background-repeat: no-repeat;
     min-height: 600px;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card2 {
+    background-image: url(../images/index/2.svg);
+    background-repeat: no-repeat;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card3 {
+    background-image: url(../images/index/3.svg);
+    background-repeat: no-repeat;
+    min-height: 600px;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card4 {
+    background-image: url(../images/index/4.svg);
+    background-repeat: no-repeat;
+    min-height: 600px;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 button {
