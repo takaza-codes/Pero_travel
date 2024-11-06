@@ -22,8 +22,7 @@
 }
 
 
-h3,
-h2 {
+h3 {
     font-family: "Montserrat", sans-serif;
     color: #0499DD;
     font-size: 18px;
@@ -39,8 +38,9 @@ p {
 }
 
 .container_excursions-cards {
-    display: flex;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
 
 }
 
@@ -123,12 +123,133 @@ button {
 }
 
 .aboutUs {
-    height: 40rem;
-    background-image: url(../images/index/5.svg);
-    background-repeat: no-repeat;
-    max-width: 1100px;
+    display: grid;
+    grid-template-rows: 20% 50% 30%;
+    grid-template-columns: 55% 35% 10%;
+    padding: 25px;
 }
 
-.aboutUs-text {
+
+.aboutUs_img {
+    background-image: url(../images/index/5.svg);
+    background-repeat: no-repeat;
+}
+
+.aboutUs_text {
     background-color: #EDEDED;
+    grid-row: 2/3;
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 20% 60% 20%;
+}
+
+.aboutUs_text-container {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: 15% 10% 10% 40% 25%;
+}
+
+h2 {
+    font-size: 24px;
+    color: #0499DD;
+    grid-row: 2/3;
+
+}
+
+.aboutUs_text-text {
+    grid-row: 4/5;
+    font-weight: 500;
+}
+
+.excursionsTypes_cards {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+}
+
+.excursionsTypes_cards-bus {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+img {
+    grid-column: 1/2;
+}
+
+.cards-text {
+    grid-column: 2/3;
+}
+
+
+.excursionsTypes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.excursionsTypes_cards-jeep {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+.excursionsTypes_cards-yacht {
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+.excursionsTypes_cards-canyon {
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+.gallery_img {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 50% repeat(2, 1fr);
+}
+
+.img-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.img-2 {
+    grid-column: 3/4;
+    grid-row: 1/4;
+}
+
+.img-3 {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.img-4 {
+    grid-column: 5/6;
+    grid-row: 1/2;
+}
+
+.img-5 {
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+.img-6 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.img-7 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.img-8 {
+    grid-column: 4/5;
+    grid-row: 2/4;
 }
