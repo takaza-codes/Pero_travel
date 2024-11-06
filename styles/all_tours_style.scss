@@ -141,9 +141,22 @@ input {
     }
 }
 
-#date {
-    padding: 0px;
+.form-date {
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        background: url(..//images/all_tours/calendar_icon.svg);
+        background-size: 1.3rem;
+        background-repeat: no-repeat;
+        background-position-x: 95%;
+        background-position-y: 50%;
+        
+    }
+
+    #date {
+        padding: 0px;
+    }
 }
+
+
 
 .button-top {
     @include button($button-text-color, $button-color, $secondary-font-weight, $main-font-size);
@@ -312,74 +325,65 @@ h4 {
 
 .slider-container {
     position: relative;
-    height: 2rem;
+    width: 100%;
+    height: 1.5rem;
+    background-color: transparent;
+    border-radius: 5px;
 }
 
-.slider {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 100%;
-    height: 8px;
-    background: $button-border-color;
-    outline: none;
+.slider-track {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-}
-
-.slider::before {
-    content: '';
-    position: absolute;
-    height: 8px;
+    height: 0.3rem;
     background-color: $primary-color;
-    border-radius: 4px;
-    top: 0;
-    z-index: -1;
-}
-
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 1.2rem;
-    height: 1.2rem;
-    background-color: $primary-color;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
-}
-
-.slider::-moz-range-thumb {
-    width: 1.2rem;
-    height: 1.2rem;
-    background-color: $primary-color;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
-}
-
-.slider-left {
+    border-radius: 5px;
+    left: 20%;
+    right: 20%;
     z-index: 1;
 }
 
-.slider-left::before {
-    width: calc(var(--val-left) * 1%);
-    left: 0;
+.slider-track::before, .slider-track::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 0.3rem;
+    background-color: $button-border-color;
+    border-radius: 5px;
+    z-index: 1;
 }
 
-.slider-right {
+.slider-track::before {
+    left: -20%;
+    right: 100%;
+}
+
+.slider-track::after {
+    left: 100%;
+    right: -20%;
+}
+
+.slider-thumb {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: $primary-color;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
     z-index: 2;
 }
 
-.slider-right::before {
-    width: calc((100 - var(--val-right)) * 1%);
-    right: 0;
+.thumb-left {
+    left: 20%;
 }
 
-
+.thumb-right {
+    right: 20%;
+}
 
 .tours {
     max-width: 1120px;
@@ -387,7 +391,7 @@ h4 {
     display: grid; 
     grid-template-columns: 30% 1fr;
     grid-template-rows: 5% repeat(4, 1fr) 5%;
-    column-gap: 3rem;
+    column-gap: 2.5rem;
     row-gap: 1rem;
 
     h2 {
@@ -400,7 +404,7 @@ h4 {
 
 .filters {
     height: fit-content;
-    padding: 1.5rem 2rem 1.5rem 2rem;
+    padding: 1.5rem 1.8rem;
     grid-column: 1 / 2;
     grid-row: span 6;
     background-color: white;

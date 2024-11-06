@@ -64,12 +64,13 @@
                         <div class="content">
                             <div class="more">
                                 <div class="price-inputs">
-                                    <div id="price-min" class="price-input">1 600</div>
-                                    <div id="price-max" class="price-input">4 000</div>
+                                    <div class="price-input">1 600</div>
+                                    <div class="price-input">4 000</div>
                                 </div>
                                 <div class="slider-container">
-                                    <input type="range" min="0" max="100" value="20" class="slider slider-left" oninput="this.style.setProperty('--val-left', this.value)">
-                                    <input type="range" min="0" max="100" value="80" class="slider slider-right" oninput="this.style.setProperty('--val-right', this.value)">
+                                    <div class="slider-track"></div>
+                                    <div class="slider-thumb thumb-left"></div>
+                                    <div class="slider-thumb thumb-right"></div>
                                 </div>
                             </div>
                         </div>
