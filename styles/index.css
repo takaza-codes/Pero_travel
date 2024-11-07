@@ -120,8 +120,13 @@ button {
     padding-right: 17px;
     margin-top: 12px;
 
+    a {
+        text-decoration: none;
+        color: white;
+    }
 
-    :hover {
+
+    a:hover {
         color: rgba(0, 0, 0, 0.5);
         opacity: 0.8;
     }
@@ -330,6 +335,10 @@ h2 {
     .img-leftRight-container {
         display: grid;
         grid-template-columns: 30% 70%;
+    }
+
+    .excursionsTypes {
+        max-width: 610px;
     }
 
     .excursionsTypes_cards {
