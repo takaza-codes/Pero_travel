@@ -13,15 +13,45 @@ html {
 header {
   background-image: url(../images/tour_overview/изобр.svg);
 }
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.logoHeader {
+  width: 40px;
+  padding-left: 20px;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+}
+
+.list a {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
 header .header_title h4 {
   font-weight: 700;
   font-size: 1.71rem;
   color: #ffc700;
+  padding-left: 60px;
+  margin: 0;
 }
 header .header_title h1 {
   font-weight: 700;
   font-size: 3.43rem;
   color: white;
+  padding-left: 60px;
+  margin: 0;
 }
 header .header_btn {
   background-image: linear-gradient(to right, #0499dd, #17c1bc);
