@@ -7,6 +7,7 @@
 
 html {
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   font-size: 14px;
 }
 
@@ -167,7 +168,7 @@ main .main_calendary-block .calendary-block_calendar .calendar_wrapper .calendar
 }
 main .main_calendary-block .calendary-block_calendar .calendar_wrapper .calendar th .date .time,
 main .main_calendary-block .calendary-block_calendar .calendar_wrapper .calendar td .date .time {
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   color: #0499dd;
 }
 main .main_rout-block {
@@ -179,6 +180,20 @@ main .main_rout-block .rout-block_description {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding-right: 3rem;
+}
+main .main_rout-block .rout-block_description h3 {
+  font-weight: 700;
+  font-size: 1.71rem;
+  color: #0499dd;
+}
+main .main_rout-block .rout-block_description ul li {
+  font-weight: 500;
+  font-size: 1rem;
+}
+main .main_rout-block .rout-block_description ul li::marker {
+  color: #ffc700;
+  font-size: 1.8rem;
 }
 main .main_rout-block .rout-block_carousel .carousel {
   width: 40rem;
@@ -196,6 +211,7 @@ main .main_rout-block .rout-block_carousel .carousel .wrapper img {
   height: 47rem;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 25px;
 }
 @keyframes scroll {
   0% {
@@ -204,7 +220,114 @@ main .main_rout-block .rout-block_carousel .carousel .wrapper img {
   100% {
     transform: translateX(-376rem); /* Ширина 8 изображений по 240px */
   }
-}/*# sourceMappingURL=tour_overview.css.map */
+
+
+
+
+main .main_extra-costs {
+  padding: 6rem;
+}
+main .main_extra-costs .extra-costs_title {
+  font-weight: 700;
+  font-size: 1.71rem;
+  color: #0499dd;
+  padding-bottom: 5rem;
+  padding-left: 1.5rem;
+}
+main .main_extra-costs .extra-costs_cards {
+  display: flex;
+  justify-content: space-around;
+}
+main .main_extra-costs .extra-costs_cards .extra-costs_card-wrapper {
+  position: relative;
+}
+main .main_extra-costs .extra-costs_cards .extra-costs_card-wrapper .icon-background {
+  background-color: #ffc700;
+  position: absolute;
+  top: -1.1rem;
+  left: -1.1rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  z-index: 0;
+}
+main .main_extra-costs .extra-costs_cards .extra-costs_card-wrapper .ticket-card {
+  width: 12rem;
+  height: 6rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 0.71rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+main .main_extra-costs .extra-costs_cards .extra-costs_card-wrapper .content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 0;
+}
+main .main_extra-costs .extra-costs_cards .extra-costs_card-wrapper .content .icon {
+  height: 1.8rem;
+  width: 2rem;
+}
+main .main_extra-costs .extra-costs_cards .extra-costs_card-wrapper .content .text .price {
+  font-weight: 700;
+  font-size: 1.71rem;
+  color: #0499dd;
+}
+main .main_important-info {
+  padding: 6rem;
+}
+main .main_important-info h4 {
+  font-weight: 700;
+  font-size: 1.29rem;
+  color: #0499dd;
+}
+main .main_important-info .important-info_title {
+  font-weight: 700;
+  font-size: 1.71rem;
+  color: #0499dd;
+  padding-bottom: 5rem;
+  padding-left: 1.5rem;
+}
+main .main_important-info .important-info_block {
+  height: 20rem;
+  display: flex;
+}
+main .main_important-info .important-info_block .important-info_doc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .main_important-info .important-info_block .important-info_doc .doc_title h4 {
+  color: black;
+}
+main .main_important-info .important-info_block .important-info_doc .doc_passport {
+  display: flex;
+}
+main .main_important-info .important-info_block .important-info_doc .doc_passport .doc_content {
+  padding: 0 3rem;
+}
+main .main_important-info .important-info_block .important-info_doc .doc_passport .doc_content p {
+  padding-top: 2rem;
+}
+main .main_important-info .import-info_frames {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .main_important-info .import-info_frames .import-info_frame {
+  width: 25rem;
+  height: 9rem;
+  background-color: #ededed;
+  text-align: start;
+  padding: 2rem 1rem;
+}
+
 
 footer {
   width: 100%;
@@ -274,4 +397,5 @@ nav.footer-column {
   align-self: start;
   display: flex;
   align-items: center;
-}
+}/*# sourceMappingURL=tour_overview.css.map */
+
