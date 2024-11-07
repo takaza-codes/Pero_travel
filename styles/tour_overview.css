@@ -16,12 +16,31 @@ header {
 header .header_title h4 {
   font-weight: 700;
   font-size: 1.71rem;
-  color: #FFC700;
+  color: #ffc700;
 }
 header .header_title h1 {
   font-weight: 700;
   font-size: 3.43rem;
   color: white;
+}
+header .header_btn {
+  background-image: linear-gradient(to right, #0499dd, #17c1bc);
+  border: none;
+  color: white;
+  border-radius: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+}
+header .header_btn:hover {
+  color: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+}
+header .header_btn a {
+  text-decoration: none;
 }
 
 main .main_description {
@@ -36,7 +55,7 @@ main .main_description .main_description_excursion {
 main .main_description .main_description_excursion h3 {
   font-weight: 700;
   font-size: 1.71rem;
-  color: #0499DD;
+  color: #0499dd;
   padding-bottom: 1rem;
 }
 main .main_description .main_description_excursion p {
@@ -47,7 +66,7 @@ main .main_description .main_description_card-wrapper {
   position: relative;
 }
 main .main_description .main_description_card-wrapper .icon-background {
-  background-color: #FFC700;
+  background-color: #ffc700;
   position: absolute;
   top: -1.1rem;
   left: -1.1rem;
@@ -82,5 +101,99 @@ main .main_description .main_description_card-wrapper .content .icon {
 main .main_description .main_description_card-wrapper .content .text .price {
   font-weight: 700;
   font-size: 1.71rem;
-  color: #0499DD;
+  color: #0499dd;
+}
+main .main_calendary-block {
+  display: flex;
+  padding: 3rem 0;
+}
+main .main_calendary-block .calendary-block_img {
+  width: 49%;
+  height: 100%;
+}
+main .main_calendary-block .calendary-block_calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+main .main_calendary-block .calendary-block_calendar .calendar_title {
+  font-weight: 700;
+  font-size: 1.71rem;
+  font-size: 1.5rem;
+  color: #0499dd;
+  padding-bottom: 5rem;
+}
+main .main_calendary-block .calendary-block_calendar .calendar_wrapper {
+  width: 41rem;
+  height: 33.57rem;
+  background-color: #ededed;
+  padding: 2rem;
+  border-radius: 15px;
+}
+main .main_calendary-block .calendary-block_calendar .calendar_wrapper .calendar_header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+main .main_calendary-block .calendary-block_calendar .calendar_wrapper .calendar_header a {
+  text-decoration: none;
+  color: #0499dd;
+}
+main .main_calendary-block .calendary-block_calendar .calendar_wrapper .calendar {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 0;
+}
+main .main_calendary-block .calendary-block_calendar .calendar_wrapper .calendar th,
+main .main_calendary-block .calendary-block_calendar .calendar_wrapper .calendar td {
+  width: 14.28%; /* Разделение на 7 колонок */
+  text-align: center;
+  padding: 0.8rem;
+}
+main .main_calendary-block .calendary-block_calendar .calendar_wrapper .calendar th .date,
+main .main_calendary-block .calendary-block_calendar .calendar_wrapper .calendar td .date {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .main_calendary-block .calendary-block_calendar .calendar_wrapper .calendar th .date .time,
+main .main_calendary-block .calendary-block_calendar .calendar_wrapper .calendar td .date .time {
+  font-size: 0.6rem;
+  color: #0499dd;
+}
+main .main_rout-block {
+  display: flex;
+  padding: 3rem 0;
+  padding-left: 6rem;
+}
+main .main_rout-block .rout-block_description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+main .main_rout-block .rout-block_carousel .carousel {
+  width: 40rem;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+main .main_rout-block .rout-block_carousel .carousel .wrapper {
+  display: flex;
+  gap: 0.8rem;
+  animation: scroll 30s linear infinite;
+}
+main .main_rout-block .rout-block_carousel .carousel .wrapper img {
+  width: 40rem;
+  height: 47rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-376rem); /* Ширина 8 изображений по 240px */
+  }
 }/*# sourceMappingURL=tour_overview.css.map */
