@@ -16,15 +16,46 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.logoHeader {
+  width: 40px;
+  padding-left: 20px;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+}
+
+.list a {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
 header .header_title h4 {
   font-weight: 700;
   font-size: 1.71rem;
   color: #ffc700;
+  padding-left: 60px;
+  margin: 0;
 }
+
 header .header_title h1 {
   font-weight: 700;
   font-size: 3.43rem;
   color: white;
+  padding-left: 60px;
+  margin: 0;
 }
 
 /* header .header_btn {
@@ -39,7 +70,6 @@ header .header_title h1 {
   font-size: 12px;
   cursor: pointer;
 } */
-
 .header_btn {
   background-image: linear-gradient(to right, #0499DD, #17C1BC);
   border: none;
@@ -62,22 +92,25 @@ header .header_btn:hover {
   color: rgba(0, 0, 0, 0.5);
   opacity: 0.8;
 }
+
 header .header_btn a {
   text-decoration: none;
   color: white;
 }
+
 header .header_btn a:hover {
   color: rgba(0, 0, 0, 0.5);
   opacity: 0.8;
 }
+
 header .header_btn a {
   text-decoration: none;
 }
 
 .liked input[type=checkbox] {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   height: 40px;
   width: 40px;
   background-image: url(../images/favorite_inactive.svg);
@@ -85,6 +118,7 @@ header .header_btn a {
   background-position: center;
   cursor: pointer;
 }
+
 .liked input[type=checkbox]:checked {
   background-image: url(../images/favorite_active.svg);
 }

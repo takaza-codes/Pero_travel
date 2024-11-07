@@ -306,7 +306,7 @@ h3 {
   grid-column: 3/5;
   grid-row: 6/7;
   justify-self: end;
-  padding-right: 20px;
+  padding-right: 40px;
 }
 .liked input[type=checkbox] {
   -webkit-appearance: none;
