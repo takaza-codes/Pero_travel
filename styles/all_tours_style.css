@@ -1,7 +1,7 @@
 body {
   width: 100%;
   box-sizing: border-box;
-  background: #FBFBFB;
+  background: #fbfbfb;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
@@ -30,8 +30,8 @@ body {
   padding-top: 3rem;
 }
 .nav-cat button:focus-within {
-  border-bottom: 2px solid #0499DD;
-  color: #0499DD;
+  border-bottom: 2px solid #0499dd;
+  color: #0499dd;
   transition: color 0.3s ease;
 }
 
@@ -60,8 +60,8 @@ body {
 }
 
 .nav-box:not(:focus-within) .nav-a {
-  border-bottom: 1px solid #0499DD;
-  color: #0499DD;
+  border-bottom: 1px solid #0499dd;
+  color: #0499dd;
 }
 
 .nav-box:not(:focus-within) .content-box {
@@ -150,7 +150,7 @@ input {
 }
 
 .button-top {
-  background-image: linear-gradient(to right, #0499DD, #17C1BC);
+  background-image: linear-gradient(to right, #0499dd, #17c1bc);
   border: none;
   color: white;
   border-radius: 40px;
@@ -200,7 +200,7 @@ input {
 
 .tour-type {
   padding-top: 15px;
-  color: #FFC700;
+  color: #ffc700;
   font-size: 12px;
 }
 
@@ -221,7 +221,7 @@ h3 {
 }
 
 .tour-info {
-  color: #0499DD;
+  color: #0499dd;
   font-size: 18px;
   font-weight: 700;
 }
@@ -253,7 +253,7 @@ h3 {
 }
 
 .learn-more {
-  background-image: linear-gradient(to right, #0499DD, #17C1BC);
+  background-image: linear-gradient(to right, #0499dd, #17c1bc);
   border: none;
   color: white;
   border-radius: 40px;
@@ -309,12 +309,12 @@ h3 {
   font-size: 1rem;
 }
 .pages input[type=radio]:checked + label {
-  color: #0499DD;
+  color: #0499dd;
 }
 
 h4 {
   font-size: 1.2rem;
-  color: #0499DD;
+  color: #0499dd;
   margin-top: 0;
 }
 
@@ -325,7 +325,7 @@ h4 {
 }
 
 .price-input {
-  border: 1px solid #D4D4D4;
+  border: 1px solid #d4d4d4;
   border-radius: 20px;
   padding: 0.5rem 0.7rem;
   width: 30%;
@@ -346,7 +346,7 @@ h4 {
   position: absolute;
   top: 50%;
   height: 0.3rem;
-  background-color: #0499DD;
+  background-color: #0499dd;
   border-radius: 5px;
   left: 20%;
   right: 20%;
@@ -359,7 +359,7 @@ h4 {
   top: 50%;
   transform: translateY(-50%);
   height: 0.3rem;
-  background-color: #D4D4D4;
+  background-color: #d4d4d4;
   border-radius: 5px;
   z-index: 1;
 }
@@ -380,7 +380,7 @@ h4 {
   transform: translateY(-50%);
   width: 0.5rem;
   height: 0.5rem;
-  background-color: #0499DD;
+  background-color: #0499dd;
   border: 2px solid white;
   border-radius: 50%;
   cursor: pointer;
@@ -409,7 +409,7 @@ h4 {
 .tours h2 {
   align-self: center;
   margin-top: 0;
-  color: #0499DD;
+  color: #0499dd;
   font-size: 2rem;
 }
 
@@ -443,7 +443,7 @@ h4 {
   background-position-y: 50%;
 }
 .filters form .price-container .content, .filters form .people-selector .content, .filters form .location-options .content, .filters form .duration .content, .filters form .date .content {
-  border-bottom: 1px solid #EDEDED;
+  border-bottom: 1px solid #ededed;
   overflow: hidden;
   padding-bottom: 25px;
 }
@@ -474,7 +474,7 @@ h4 {
   width: -moz-fit-content;
   width: fit-content;
   padding: 0.5rem 1rem;
-  border: 1px solid #D4D4D4;
+  border: 1px solid #d4d4d4;
   background-image: none;
   border-radius: 20px;
   cursor: pointer;
@@ -485,13 +485,13 @@ h4 {
   transition: background-color 0.3s, color 0.3s;
 }
 .filters form .people-selector .buttons input[type=radio]:checked + label {
-  background-color: #0499DD;
+  background-color: #0499dd;
   color: white;
-  border-color: #0499DD;
+  border-color: #0499dd;
 }
 .filters form .location-options .content .more .locations-list input {
   cursor: pointer;
-  border: #D4D4D4;
+  border: #d4d4d4;
 }
 .filters form .location-options .content .more .locations-list label {
   width: -moz-fit-content;

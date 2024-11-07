@@ -25,9 +25,6 @@ html {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   padding: 0.71rem;
-  //display: flex;
-  //align-items: center;
-  //justify-content: center;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -56,9 +53,17 @@ header {
       color: white;
     }
   }
-  // .header_btn {
-  //   @include button();
-  // }
+  .header_btn {
+    @include button(
+      $button-text-color,
+      $button-color,
+      $secondary-font-weight,
+      $main-font-size
+    );
+    a {
+      text-decoration: none;
+    }
+  }
 }
 main {
   .main_description {
@@ -105,23 +110,100 @@ main {
       }
     }
   }
+  .main_calendary-block {
+    display: flex;
+    padding: 3rem 0;
+    .calendary-block_img {
+      width: 49%;
+      height: 100%;
+    }
+    .calendary-block_calendar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      .calendar_title {
+        @include for-title;
+        font-size: 1.5rem;
+        color: $primary-color;
+        padding-bottom: 5rem;
+      }
+      .calendar_wrapper {
+        width: 41rem;
+        height: 33.57rem;
+        background-color: $background-color;
+        padding: 2rem;
+        border-radius: 15px;
+        .calendar_header {
+          display: flex;
+          justify-content: space-between;
+          font-size: 1.4rem;
+
+          a {
+            text-decoration: none;
+            color: $primary-color;
+          }
+        }
+        .calendar {
+          width: 100%;
+          height: 100%;
+          padding: 2rem 0;
+          th,
+          td {
+            width: 14.28%; /* Разделение на 7 колонок */
+            text-align: center;
+            padding: 0.8rem;
+            .date {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              .time {
+                font-size: 0.6rem;
+                color: $primary-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .main_rout-block {
+    display: flex;
+    padding: 3rem 0;
+    padding-left: 6rem;
+    .rout-block_description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    .rout-block_carousel {
+      .carousel {
+        width: 40rem;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        .wrapper {
+          display: flex;
+          gap: 0.8rem;
+          animation: scroll 30s linear infinite;
+          img {
+            width: 40rem;
+            height: 47rem;
+            object-fit: cover;
+          }
+        }
+      }
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-376rem); /* Ширина 8 изображений по 240px */
+        }
+      }
+    }
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // .burger-menu {
 //   display: none;
@@ -205,9 +287,8 @@ main {
 //   transform: translateX(0);
 // }
 
-
 // @media screen and (max-width: 768px) {
-  
+
 //   .burger-menu {
 //     display: block;
 //   }
