@@ -54,7 +54,8 @@ header .header_title h1 {
   padding-left: 60px;
   margin: 0;
 }
-header .header_btn {
+
+/* header .header_btn {
   background-image: linear-gradient(to right, #0499dd, #17c1bc);
   border: none;
   color: white;
@@ -65,7 +66,26 @@ header .header_btn {
   font-weight: 700;
   font-size: 12px;
   cursor: pointer;
+} */
+
+.header_btn {
+  background-image: linear-gradient(to right, #0499DD, #17C1BC);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+  max-height: 4rem;
+  min-height: 3rem;
+  font-size: 1.2rem;
+  max-width: 225px;
+  min-width: 14rem;
+  border-radius: 40px;
 }
+
 header .header_btn:hover {
   color: rgba(0, 0, 0, 0.5);
   opacity: 0.8;
@@ -80,6 +100,21 @@ header .header_btn a:hover {
 }
 header .header_btn a {
   text-decoration: none;
+}
+
+.liked input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 40px;
+  width: 40px;
+  background-image: url(../images/favorite_inactive.svg);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+.liked input[type=checkbox]:checked {
+  background-image: url(../images/favorite_active.svg);
 }
 
 main .main_description {
