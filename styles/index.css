@@ -202,8 +202,10 @@ img {
 
 
 .excursionsTypes {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 10% 70% 20%;
+    align-items: center;
+    align-content: center;
     gap: 2rem;
 }
 
@@ -241,7 +243,7 @@ img {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 50% repeat(2, 1fr);
     gap: 15px;
-    max-width: 1200px;
+    max-width: 80rem;
 }
 
 .img {
@@ -300,3 +302,5 @@ img {
     align-items: center;
     gap: 20px;
 }
+
+@media screen (max-width: 860px) {}
