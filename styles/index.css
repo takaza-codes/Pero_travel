@@ -126,11 +126,15 @@ button {
     }
 
 
+
+
     a:hover {
         color: rgba(0, 0, 0, 0.5);
         opacity: 0.8;
     }
 }
+
+
 
 .aboutUs {
     display: grid;
@@ -462,10 +466,9 @@ h2 {
     .aboutUs_text {
         max-width: 380px;
         max-height: 386px;
-
     }
-
 }
+
 
 footer {
     width: 100%;
