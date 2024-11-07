@@ -13,6 +13,8 @@ html {
 
 header {
   background-image: url(../images/tour_overview/изобр.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header-container {
