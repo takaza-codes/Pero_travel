@@ -1,0 +1,157 @@
+
+// HTML для футера
+
+<footer>
+    <div class="footer-container">
+        <div class="logoFooter"><a href="index.html"><img class="imgLogo" src="../images/logo_color.svg" alt="Лого"></a></div>
+        <nav class="footer-column" class="navFooter">
+            <ul class="footer-items">
+                <li class="footer-item"><a href="#">Главная</a></li>
+                <li class="footer-item"><a href="#">Экскурсии</a></li>
+                <li class="footer-item"><a href="#">Личный кабинет</a></li>
+            </ul>
+        </nav>
+        <div class="footer-column" id="contactsFooter">
+            <a href="#"><img class="imgContacts" src="../images/whatsapp.svg" alt="Контакт whatsapp">+7 964 944 18 74</a><br>
+            <a href="#"><img img class="imgContacts" src="../images/telegram.svg" alt="Контакт telegram">+7 918 919 98 28</a><br>
+            <a href="#"><img img class="imgContacts" src="../images/telegram2.svg" alt="Контакт телеграм-бот">Телеграм-бот PeroTravel</a><br>
+        </div>
+        <div class="footer-column" id="mediaFooter">   
+            <a href="#"><img img class="imgContacts" src="../images/mail.svg" alt="Контакт email">office@perotravel.ru</a><br>
+        </div> 
+        <div class="media-container">
+            <a href="#"><img src="../images/vk_color.svg" alt="Контакт vk"></a>
+            <a href="#"><img src="../images/inst_color.svg" alt="Контакт instagram"></a>
+            <a href="#"><img src="../images/facebook_color.svg" alt="Контакт facebook"></a>
+        </div>
+    </div>
+</footer>
+
+
+// CSS и медиазапросы для футера
+footer {
+    width: 100%;
+    height: 173px;
+    background-color: #EDEDED;
+}
+
+.footer-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.logoFooter {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    width: fit-content;
+    padding-left: 3rem;
+}
+
+nav.footer-column {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    justify-self: start
+}
+
+#contactsFooter {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+
+
+.footer-items {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.footer-item {
+    margin-top: 7px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+}
+
+.imgContacts {
+    padding-right: 5px;
+}
+
+#mediaFooter {
+    justify-self: start;
+    align-self: end;
+    padding-bottom: 5px;
+}
+
+.media-container {
+    height: 2.5rem;
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    justify-self: start;
+    align-self: start;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .footer-column a {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    
+    footer {
+        min-height: 400px;
+        max-height: 415px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 45% 10% 30% auto;
+
+        .logoFooter {
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+            padding: 0;
+        }
+
+        .media-container {
+            grid-column: 1 / 3;
+            grid-row: 2 / 3;
+            justify-self: center;
+        }
+
+        nav.footer-column {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+            justify-self: center;
+            align-self: end;
+        }
+        
+        #contactsFooter {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+            justify-self: start;
+            align-self: end;
+        }
+
+        #mediaFooter {
+            grid-column: 2 / 3;
+            grid-row: 4 / 5;
+            justify-self: start;
+            align-self: start;
+        }
+
+        .footer-items {
+            margin: 0;
+        }
+    }
+}
