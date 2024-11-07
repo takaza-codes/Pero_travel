@@ -5,6 +5,15 @@ body {
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  flex: 1 1 auto;
+  height: 100%;
+  margin-bottom: 40px;
 }
 
 .top {
@@ -145,8 +154,8 @@ input {
   background-position-y: 50%;
 }
 .form-date input[type=date i] {
-  padding-inline-start: 0.5rem;
-  padding-inline-end: 0.5rem;
+  padding-inline-start: 0.2rem;
+  padding-inline-end: 0.2rem;
 }
 
 .button-top {
@@ -168,6 +177,14 @@ input {
   border-radius: 10px;
 }
 .button-top:hover {
+  color: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+}
+.button-top a {
+  text-decoration: none;
+  color: white;
+}
+.button-top a:hover {
   color: rgba(0, 0, 0, 0.5);
   opacity: 0.8;
 }
@@ -272,6 +289,14 @@ h3 {
   grid-row: 6/7;
 }
 .learn-more:hover {
+  color: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+}
+.learn-more a {
+  text-decoration: none;
+  color: white;
+}
+.learn-more a:hover {
   color: rgba(0, 0, 0, 0.5);
   opacity: 0.8;
 }
@@ -398,7 +423,7 @@ h4 {
 
 .tours {
   max-width: 1120px;
-  margin: 0px auto;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 30% 1fr;
   grid-template-rows: 5% repeat(4, 1fr) 5%;
@@ -673,7 +698,9 @@ h4 {
 header {
   width: 100%;
   height: 289px;
-  background-image: url(../images/header_background_all_tours.svg);
+  background-image: url(..//images/all_tours/header_adaptive.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header-container {
@@ -719,14 +746,20 @@ footer {
 .footer-container {
   height: 100%;
   display: grid;
-  grid-template-columns: 20% 1fr 25% 25%;
+  grid-template-columns: 25% repeat(3, 1fr);
   grid-template-rows: 1fr;
   align-items: center;
-  padding-left: 60px;
+  justify-items: center;
 }
 
-.imgLogo {
-  justify-self: center;
+.logoFooter {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 3rem;
+}
+
+.footer-column:nth-child(2), .footer-column:nth-child(4) {
+  justify-self: start;
 }
 
 .footer-items {
@@ -741,7 +774,7 @@ footer {
   text-decoration: none;
   color: black;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 1.1rem;
 }
 
 .imgContacts {

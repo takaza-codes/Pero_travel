@@ -38,4 +38,14 @@ $button-border-color: #d4d4d4;
     color: rgba(0, 0, 0, 0.5);
     opacity: 0.8;
   }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover {
+    color: rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+  }
 }
