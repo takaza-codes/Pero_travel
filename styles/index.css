@@ -8,6 +8,9 @@
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
     font-weight: 350;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .container_excursions {
@@ -42,7 +45,7 @@ p {
 .container_excursions-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+    gap: 3.5rem;
 
 }
 
@@ -170,7 +173,7 @@ h2 {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
+    gap: 2rem;
     max-width: 1200px;
 }
 
@@ -183,7 +186,8 @@ h2 {
 .feedback_cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-rows: 1fr;
+    gap: 2rem;
     max-width: 1200px;
 }
 
@@ -200,7 +204,13 @@ img {
 .excursionsTypes {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 2rem;
+}
+
+.excursionsTypes_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .excursionsTypes_cards-jeep {
@@ -219,11 +229,19 @@ img {
     grid-template-columns: 15% 85%;
 }
 
+.gallery,
+.feedback {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
 .gallery_img {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 50% repeat(2, 1fr);
     gap: 15px;
+    max-width: 1200px;
 }
 
 .img {
