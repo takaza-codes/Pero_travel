@@ -237,6 +237,10 @@ h2 {
     gap: 3rem;
 }
 
+.gallery {
+    max-width: 1409px;
+}
+
 .gallery_img {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -381,6 +385,12 @@ h2 {
         display: none;
     }
 
+    .aboutUs_text {
+        max-width: 493px;
+        max-height: 433px;
+
+    }
+
     .aboutUs_text-text {
         font-size: 0.6rem;
     }
@@ -428,6 +438,11 @@ h2 {
         display: none;
     }
 
+    .excursionsTypes,
+    .gallery {
+        max-width: 380px;
+    }
+
     .container_excursions-cards {
         display: grid;
         grid-template-columns: 1fr 25%;
@@ -442,6 +457,12 @@ h2 {
 
     .aboutUs {
         grid-template-columns: 5% 90% 5%;
+    }
+
+    .aboutUs_text {
+        max-width: 380px;
+        max-height: 386px;
+
     }
 
 }
