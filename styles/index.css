@@ -62,7 +62,9 @@ p {
     overflow: hidden;
 }
 
-.card-body {
+.card-body,
+.card1,
+.card2 {
     max-width: 320px;
     color: white;
     gap: 5px;
@@ -175,7 +177,7 @@ button {
 .aboutUs_picture {
     position: relative;
     z-index: -1;
-    width: 90%;
+    right: 5rem;
 }
 
 .aboutUs_text-container {
@@ -325,6 +327,10 @@ h2 {
     grid-row: 2/4;
 }
 
+.aboutUs_img2,
+.aboutUs_img3 {
+    display: none;
+}
 
 .container_feedback {
     overflow: hidden;
@@ -395,16 +401,25 @@ h2 {
         flex-direction: column;
     }
 
-    .aboutUs_picture {
+    /* .aboutUs_picture {
         position: relative;
         z-index: -1;
         right: 10rem;
         width: 90%;
-    }
+    } */
 
     .aboutUs {
         display: grid;
         grid-template-columns: 25% 60% 25%;
+    }
+
+    .aboutUs_img,
+    .aboutUs_img3 {
+        display: none;
+    }
+
+    .aboutUs_img2 {
+        display: inline;
     }
 
     .aboutUs_text {
@@ -500,7 +515,17 @@ h2 {
     }
 
     .aboutUs {
-        grid-template-columns: 5% 90% 5%;
+        grid-template-columns: 5% 80% 15%;
+        grid-template-rows: 15% 35% 50%;
+    }
+
+    .aboutUs_img,
+    .aboutUs_img2 {
+        display: none;
+    }
+
+    .aboutUs_img3 {
+        display: inline;
     }
 
     .aboutUs_text {
@@ -517,6 +542,19 @@ h2 {
         display: inline;
         grid-row: 4/5;
         font-weight: 500;
+    }
+
+    /* .aboutUs_picture { */
+    /* position: relative;
+        z-index: -1;
+        right: 25rem;
+    } */
+
+    .excursionsTypes_cards-bus,
+    .excursionsTypes_cards-jeep,
+    .excursionsTypes_cards-yacht,
+    .excursionsTypes_cards-canyon {
+        grid-template-columns: 30% 70%;
     }
 }
 
