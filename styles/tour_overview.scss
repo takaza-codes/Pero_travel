@@ -94,7 +94,7 @@ header .header_title h1 {
 }
 
 .header_btn {
-  background-image: linear-gradient(to right, #0499DD, #17C1BC);
+  background-image: linear-gradient(to right, #0499dd, #17c1bc);
   border: none;
   color: white;
   text-align: center;
@@ -128,10 +128,10 @@ header .header_btn a {
   text-decoration: none;
 }
 
-.liked input[type=checkbox] {
+.liked input[type="checkbox"] {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   height: 40px;
   width: 40px;
   background-image: url(../images/favorite_inactive.svg);
@@ -139,16 +139,16 @@ header .header_btn a {
   background-position: center;
   cursor: pointer;
 }
-.liked input[type=checkbox]:checked {
+.liked input[type="checkbox"]:checked {
   background-image: url(../images/favorite_active.svg);
 }
 
 main {
   .main_description {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding: 3rem 1.2rem;
+    padding: 6rem 6rem;
     .main_description_excursion {
       width: 30%;
       h3 {
@@ -190,11 +190,11 @@ main {
   }
   .main_calendary-block {
     display: flex;
-    padding: 3rem 0;
-    .calendary-block_img {
-      width: 49%;
-      height: 100%;
-    }
+    padding: 6rem 0;
+    padding-right: 6rem;
+    justify-content: flex-end;
+    background-image: url(../images/tour_overview/img-calendar.svg);
+    background-repeat: no-repeat;
     .calendary-block_calendar {
       display: flex;
       flex-direction: column;
@@ -202,9 +202,9 @@ main {
       justify-content: center;
       .calendar_title {
         @include for-title;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         color: $primary-color;
-        padding-bottom: 5rem;
+        margin-bottom: 5rem;
       }
       .calendar_wrapper {
         width: 41rem;
@@ -215,7 +215,7 @@ main {
         .calendar_header {
           display: flex;
           justify-content: space-between;
-          font-size: 1.4rem;
+          font-size: 1.3rem;
 
           a {
             text-decoration: none;
@@ -247,7 +247,7 @@ main {
   }
   .main_rout-block {
     display: flex;
-    padding: 3rem 0;
+    padding: 6rem 0;
     padding-left: 6rem;
     .rout-block_description {
       display: flex;
@@ -277,8 +277,8 @@ main {
           gap: 0.8rem;
           animation: scroll 30s linear infinite;
           img {
-            width: 40rem;
-            height: 47rem;
+            width: 20rem;
+            height: 30rem;
             object-fit: cover;
             border-radius: 25px;
           }
@@ -289,7 +289,7 @@ main {
           transform: translateX(0);
         }
         100% {
-          transform: translateX(-376rem); /* Ширина 8 изображений по 240px */
+          transform: translateX(-160rem);
         }
       }
     }
@@ -318,7 +318,7 @@ main {
           display: flex;
           justify-content: center;
           text-align: center;
-          padding: 1rem 0;
+          padding: 0.5rem 0;
           .icon {
             height: 1.8rem;
             width: 2rem;
@@ -379,6 +379,139 @@ main {
         background-color: $background-color;
         text-align: start;
         padding: 2rem 1rem;
+      }
+    }
+  }
+  .main_gallery-block {
+    .gallery-block_title {
+      display: flex;
+      justify-content: space-between;
+      padding: 6rem;
+      h3 {
+        @include for-title;
+        color: $primary-color;
+      }
+      a {
+        color: $main-color;
+      }
+    }
+    .gallery_img {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: 2fr 1fr 1fr;
+      gap: 0.8rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      .item1 {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+      }
+
+      .item2 {
+        grid-column: 3 / 4;
+        grid-row: 1 / 4;
+      }
+
+      .item3 {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+      }
+
+      .item4 {
+        grid-column: 5 / 6;
+        grid-row: 1 / 2;
+      }
+
+      .item5 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+      }
+
+      .item6 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      }
+
+      .item7 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+      }
+
+      .item8 {
+        grid-column: 4 / 6;
+        grid-row: 2 / 4;
+      }
+    }
+  }
+  .main_comment-block {
+    padding: 6rem 0;
+    .comment-block_title {
+      display: flex;
+      justify-content: space-between;
+      padding: 6rem;
+      h3 {
+        @include for-title;
+        color: $primary-color;
+      }
+      a {
+        color: $main-color;
+      }
+    }
+    .comment_carousel {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      padding: 1rem;
+      .carousel {
+        overflow: hidden;
+        position: relative;
+        .wrapper {
+          display: flex;
+          animation: scroll 30s linear infinite;
+          gap: 1rem;
+          .comment_item {
+            max-width: 50rem;
+            max-height: 20rem;
+            flex-shrink: 0;
+            display: flex;
+            align-items: self-start;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: $button-border-color;
+            img {
+              width: 30%;
+              height: 100%;
+              margin: 1 rem;
+            }
+            .text {
+              width: 30rem;
+              padding-left: 2rem;
+              h4 {
+                font-weight: 700;
+                font-size: 1.2;
+                margin: 0;
+              }
+              p {
+                margin-top: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-120rem);
+        }
       }
     }
   }
@@ -452,8 +585,58 @@ nav.footer-column {
   display: flex;
   align-items: center;
 }
-
-// .burger-menu {
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  main {
+    .main_description {
+      flex-wrap: wrap;
+      .main_description_excursion {
+        width: 100%;
+        padding-bottom: 6rem;
+      }
+    }
+    .main_calendary-block {
+      .calendary-block_calendar {
+        .calendar_title {
+          background-color: white;
+          padding: 0.5rem;
+          border-radius: 10px;
+        }
+      }
+    }
+    .main_rout-block {
+      flex-direction: column;
+      .rout-block_carousel {
+        .carousel {
+          width: 55rem;
+        }
+      }
+    }
+    .main_extra-costs {
+      .extra-costs_cards {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 11px;
+  }
+  main {
+    .main_rout-block {
+      flex-direction: column;
+      .rout-block_carousel {
+        .carousel {
+          width: 30rem;
+        }
+      }
+    }
+  }
+} // .burger-menu {
 //   display: none;
 // }
 
