@@ -1006,16 +1006,19 @@ nav.footer-column {
 .footerFormTour {
   grid-column: 2/3;
   grid-row: 1/2;
-}
+} 
 
 .footerFormButton {
   display: flex;
   justify-content: flex-start;
+  margin-top: 40px;
 }
 
 .footerFormTour h4 {
   padding-top: 130px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
+  @include for-title;
+  color: $primary-color;
 }
 
 .form-top {
@@ -1024,22 +1027,20 @@ nav.footer-column {
   flex-direction: column;
   gap: 2rem;
 
-  input,
-  select {
-    border: none;
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    max-height: 4rem;
-    min-height: 3rem;
-    font-size: 1.2rem;
-    border-radius: 0.8rem;
-    max-width: 235px;
-    min-width: 224px;
+  input, select {
+      border: none;
+      box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      max-height: 4rem;
+      min-height: 3.4rem;
+      font-size: 1.2rem;
+      border-radius: 0.8rem;
+      max-width: 335px;
+      min-width: 324px;
   }
 }
 
-input:focus,
-select:focus {
+input:focus, select:focus {
   outline: 0;
 }
 
@@ -1049,56 +1050,49 @@ input {
 
 .form-date {
   input[type="date"]::-webkit-calendar-picker-indicator {
-    box-sizing: border-box;
-    background: url(../images/all_tours/calendar_icon.svg);
-    background-size: 1.3rem;
-    background-repeat: no-repeat;
-    background-position-x: 95%;
-    background-position-y: 50%;
+      box-sizing: border-box;
+      background: url(../images/all_tours/calendar_icon.svg);
+      background-size: 1.3rem;
+      background-repeat: no-repeat;
+      background-position-x: 95%;
+      background-position-y: 60%;
   }
 
   input[type="date" i] {
-    padding-inline-start: 0.2rem;
-    padding-inline-end: 0.2rem;
+      padding-inline-start: 0.9rem;
+      padding-inline-end: 1.1rem;
   }
 }
 
 .form-people {
   select {
-    appearance: none;
-    background: url(../images/all_tours/people_icon.svg);
-    background-repeat: no-repeat;
-    background-size: 1.3rem;
-    background-position-x: 95%;
-    background-position-y: 50%;
-    padding-left: 1rem;
+      appearance: none;
+      background: url(../images/all_tours/people_icon.svg);
+      background-repeat: no-repeat;
+      background-size: 1.3rem;
+      background-position-x: 95%;
+      background-position-y: 50%;
+      padding-left: 1rem;
   }
 }
 
 .form-child {
   select {
-    appearance: none;
-    background: url(../images/all_tours/people_icon.svg);
-    background-repeat: no-repeat;
-    background-size: 1.3rem;
-    background-position-x: 95%;
-    background-position-y: 50%;
-    padding-left: 1rem;
+      appearance: none;
+      background: url(../images/all_tours/people_icon.svg);
+      background-repeat: no-repeat;
+      background-size: 1.3rem;
+      background-position-x: 95%;
+      background-position-y: 50%;
+      padding-left: 1rem;
   }
 }
 
 .button-top {
-  @include button(
-    $button-text-color,
-    $button-color,
-    $secondary-font-weight,
-    $main-font-size
-  );
-
-  max-height: 4rem;
-  min-height: 3rem;
-  font-size: 1.2rem;
-  max-width: 225px;
-  min-width: 14rem;
-  border-radius: 10px;
+  @include button($button-text-color, $button-color, $secondary-font-weight, $main-font-size);
+  max-height: 40px;
+  min-height: 35px;
+  max-width: 265px;
+  min-width: 265px;
+  margin-right: 20px;
 }
