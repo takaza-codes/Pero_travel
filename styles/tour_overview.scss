@@ -1096,3 +1096,11 @@ input {
   min-width: 265px;
   margin-right: 20px;
 }
+
+nav a.active {
+  color: #ffc700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem; 
+  text-decoration: none; 
+  margin-left: 20px;
+}
