@@ -700,6 +700,79 @@ form {
     margin-right: 15px;
 }
 
+footer {
+    width: 100%;
+    height: 173px;
+    background-color: #EDEDED;
+}
+
+.footer-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.logoFooter {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    width: fit-content;
+    padding-left: 3rem;
+}
+
+nav.footer-column {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    justify-self: start
+}
+
+#contactsFooter {
+    margin: 0;
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+
+
+.footer-items {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.footer-item {
+    margin-top: 7px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+}
+
+.imgContacts {
+    padding-right: 5px;
+}
+
+#mediaFooter {
+    margin: 0;
+    justify-self: start;
+    align-self: end;
+    padding-bottom: 5px;
+}
+
+.media-container {
+    margin: 0;
+    height: 2.5rem;
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    justify-self: start;
+    align-self: start;
+    display: flex;
+    align-items: center;
+}
+
 @media screen and (max-width: 768px) {
 
     header {
@@ -907,6 +980,9 @@ form {
     .footer-column a {
         font-size: 0.8rem;
     }
+    .media-container {
+    column-gap: 15px;
+    }
 }
 
 @media screen and (max-width: 440px) {
@@ -977,85 +1053,41 @@ form {
     .excursionsTypes_cards-canyon {
         grid-template-columns: 30% 70%;
     }
-}
 
+    .footerForm {
+        max-width: 440px;
+        height: 928px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        background-position-x: 40%;
+    }
 
-footer {
-    width: 100%;
-    height: 173px;
-    background-color: #EDEDED;
-}
+    .questionForm {
+        padding-top: 15px;
+        grid-column: 1 / 2;
+        background-color: none;
+        backdrop-filter: none;
+    } 
 
-.footer-container {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 25% repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    align-items: center;
-    justify-items: center;
-}
+    .table {
+        max-height: 640px;
+        padding-left: 2.5rem;
+        background-color: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(8px);
+    }
 
-.logoFooter {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-    width: fit-content;
-    padding-left: 3rem;
-}
+    .table > label {
+        font-size: 0.9rem;
+    } 
 
-nav.footer-column {
-    grid-column: 2 / 3;
-    grid-row: 1 / 3;
-    justify-self: start
-}
-
-#contactsFooter {
-    grid-column: 3 / 4;
-    grid-row: 1 / 3;
-}
-
-
-.footer-items {
-    list-style: none;
-    padding-left: 10px;
-}
-
-.footer-item {
-    margin-top: 7px;
-}
-
-.footer-column a {
-    text-decoration: none;
-    color: black;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.1rem;
-}
-
-.imgContacts {
-    padding-right: 5px;
-}
-
-#mediaFooter {
-    justify-self: start;
-    align-self: end;
-    padding-bottom: 5px;
-}
-
-.media-container {
-    height: 2.5rem;
-    grid-column: 4 / 5;
-    grid-row: 2 / 3;
-    justify-self: start;
-    align-self: start;
-    display: flex;
-    align-items: center;
-}
-
-@media screen and (max-width: 768px) {
-
+    .footerForm h4 {
+        font-size: 1.4rem;
+        padding: 5px 0;
+    }
     
-}
-
-@media screen and (max-width: 440px) {
+    .footerForm h5 {
+        font-size: 1rem;
+    }
 
     footer {
         min-height: 400px;
@@ -1094,6 +1126,7 @@ nav.footer-column {
     }
 
     #mediaFooter {
+        margin: 0;
         grid-column: 2 / 3;
         grid-row: 4 / 5;
         justify-self: start;
@@ -1104,6 +1137,13 @@ nav.footer-column {
         margin: 0;
     }
 }
+
+
+
+
+    
+
+    
 
 
 
