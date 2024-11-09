@@ -48,7 +48,7 @@
         </ul>
       </div> -->
       <div class="header-container2">
-        <div class="header_btn"><a href="#">К другим экскурсиям</a></div>
+        <button class="header_btn"><a href="all_tours.html">К другим экскурсиям <img src="../images/index/arrow.svg" alt=""></a></button>
         <div class="liked"><input type="checkbox" /></div>
       </div>
     </header>
@@ -606,6 +606,37 @@
           </div>
         </div>
       </div>
+
+      <div class="footerForm">
+        <div class="imgForm"><img src="../images/form_tour_overview.svg" alt="Фото формы"></div>
+        <div class="footerFormTour">
+          <h4>Забронировать тур</h4>
+          <form class="form-top">
+            <div class="form-date">
+              <input type="date" id="date" name="trip-date"
+              value="2024-11-10"
+              min="2024-11-10" max="2024-12-31">
+            </div>
+            <div class="form-people">
+              <label for="people"></label>
+              <select id="people">
+                <option value="peoples">5 взрослых</option>
+              </select>
+            </div>
+            <div class="form-child">
+              <label for="child"></label>
+              <select id="child">
+                <option value="childs">Количество детей</option>
+              </select>
+            </div>
+            <div class="footerFormButton">
+            <button type="submit" class="button-top">Забронировать</button>
+            <div class="liked"><input type="checkbox" /></div>
+            </div>
+          </form>
+        </div>
+    </div>
+
     </main>
     <footer>
       <div class="footer-container">
