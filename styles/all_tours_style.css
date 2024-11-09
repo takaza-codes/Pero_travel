@@ -979,4 +979,11 @@ nav.footer-column {
   .footer-container .footer-items {
     margin: 0;
   }
+}
+nav a.active {
+  color: #ffc700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  text-decoration: none;
+  margin-left: 20px;
 }/*# sourceMappingURL=all_tours_style.css.map */
