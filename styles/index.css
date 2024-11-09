@@ -471,6 +471,10 @@ h2 {
   grid-column: 2/3;
 }
 
+.cards-text > h4 {
+    color: black;
+}
+
 .excursionsTypes {
   display: grid;
   grid-template-rows: 10% 70% 20%;
@@ -929,6 +933,16 @@ nav.footer-column {
     gap: 3.5rem;
   }
 
+  h3 {
+    grid-column: 1/2;
+  }
+  
+  .container_excursions-head > p {
+    margin: 0;
+    grid-column: 2 / 3;
+    justify-self: end;
+  }
+
   .img-leftRight-container {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -1020,6 +1034,25 @@ nav.footer-column {
     gap: 30px;
     padding: 20px;
   }
+
+  .feedback_card1,
+  .feedback_card2 {
+    width: 500px;
+    height: 250px;
+  }
+  
+      .feedback_cards {
+          display: grid;
+          grid-auto-flow: column;
+          grid-auto-columns: 500px;
+          animation: scroll 35s linear infinite;
+      }
+  
+      @keyframes scroll {
+          to {
+            translate: calc(-2 * 500px);
+          }
+        }
 
   .card_img {
     width: 10rem;
@@ -1139,6 +1172,10 @@ nav.footer-column {
     max-width: 380px;
   }
 
+  .container_excursions-head > p {
+    display: none;
+  }
+
   .container_excursions-cards {
     display: grid;
     grid-template-columns: 1fr 25%;
@@ -1192,6 +1229,55 @@ nav.footer-column {
     .excursionsTypes_cards-canyon {
         grid-template-columns: 30% 70%;
     }
+
+    .feedback_cards-card {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30px;
+        padding: 20px;
+      }
+
+      .container_feedback {
+        max-height: 450px;
+      }
+
+      .feedback_card1,
+      .feedback_card2 {
+        width: 280px;
+        height: 450px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25% 1fr;
+        padding: 20px;
+        align-items: start;
+      }
+
+      .card_img {
+        margin: 0;
+        justify-self: start;
+        max-width: 80px;
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+      }
+
+      .feedback_card1,
+      .feedback_card2 > .cards-text {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        font-size: 0.9rem;
+      }
+      
+          .feedback_cards {
+              display: grid;
+              grid-auto-flow: column;
+              grid-auto-columns: 280px;
+              animation: scroll 35s linear infinite;
+          }
+      
+          @keyframes scroll {
+              to {
+                translate: calc(-2 * 280px);
+              }
+            }
 
     .footerForm {
         height: 928px;
