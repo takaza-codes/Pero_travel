@@ -471,6 +471,10 @@ h2 {
   grid-column: 2/3;
 }
 
+.cards-text > h4 {
+  color: black;
+}
+
 .excursionsTypes {
   display: grid;
   grid-template-rows: 10% 70% 20%;
@@ -660,7 +664,7 @@ form {
 .footerForm h4 {
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: 700;
   margin: 0;
 }
@@ -668,7 +672,7 @@ form {
 .footerForm h5 {
   color: #ffc700;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 1.1rem;
   font-weight: 500;
   margin: 0;
 }
@@ -684,7 +688,7 @@ form {
   text-decoration: none;
   display: inline-block;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 1rem;
   cursor: pointer;
   max-height: 40px;
   min-height: 3rem;
@@ -693,6 +697,150 @@ form {
   min-width: 14rem;
   border-radius: 40px;
   margin-right: 15px;
+}
+
+footer {
+  width: 100%;
+  height: 173px;
+  background-color: #ededed;
+}
+
+.footer-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 25% repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.logoFooter {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  width: fit-content;
+  padding-left: 3rem;
+}
+
+nav.footer-column {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  justify-self: start;
+}
+
+#contactsFooter {
+  margin: 0;
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+}
+
+.footer-items {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.footer-item {
+  margin-top: 7px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+}
+
+.imgContacts {
+  padding-right: 5px;
+}
+
+#mediaFooter {
+  margin: 0;
+  justify-self: start;
+  align-self: end;
+  padding-bottom: 5px;
+}
+
+.media-container {
+  margin: 0;
+  height: 2.5rem;
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+  justify-self: start;
+  align-self: start;
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  height: 173px;
+  background-color: #ededed;
+}
+
+.footer-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 25% repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.logoFooter {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  width: fit-content;
+  padding-left: 3rem;
+}
+
+nav.footer-column {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  justify-self: start;
+}
+
+#contactsFooter {
+  margin: 0;
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+}
+
+.footer-items {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.footer-item {
+  margin-top: 7px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+}
+
+.imgContacts {
+  padding-right: 5px;
+}
+
+#mediaFooter {
+  margin: 0;
+  justify-self: start;
+  align-self: end;
+  padding-bottom: 5px;
+}
+
+.media-container {
+  margin: 0;
+  height: 2.5rem;
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+  justify-self: start;
+  align-self: start;
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -782,6 +930,16 @@ form {
     display: grid;
     grid-template-columns: repeat(2, 1fr) 15%;
     gap: 3.5rem;
+  }
+
+  h3 {
+    grid-column: 1/2;
+  }
+
+  .container_excursions-head > p {
+    margin: 0;
+    grid-column: 2 / 3;
+    justify-self: end;
   }
 
   .img-leftRight-container {
@@ -876,12 +1034,130 @@ form {
     padding: 20px;
   }
 
+  .feedback_card1,
+  .feedback_card2 {
+    width: 500px;
+    height: 250px;
+  }
+
+  .feedback_cards {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 500px;
+    animation: scroll 35s linear infinite;
+  }
+
+  @keyframes scroll {
+    to {
+      translate: calc(-2 * 500px);
+    }
+  }
+
   .card_img {
     width: 10rem;
+  }
+  .media-container {
+    column-gap: 15px;
+  }
+
+  .questionForm {
+    margin: 0;
+    width: 400px;
+    grid-column: 2/3;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+  }
+
+  .table {
+    margin: 0;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 4rem;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  .footerForm h4 {
+    font-size: 1.5rem;
+  }
+
+  .footerForm h5 {
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 440px) {
+  header {
+    max-width: 440px;
+    min-height: 900px;
+    max-height: 1115px;
+    margin-bottom: 100px;
+    background-image: url(..//images/index/header_mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .header-container {
+    height: 1115px;
+    display: grid;
+    grid-template-columns: 20px 270px 5% 25% auto;
+    grid-template-rows: 20% min-content 2% auto repeat(3, 1fr);
+    justify-items: start;
+  }
+
+  .subtitleHeader > h2 {
+    font-size: 2rem;
+  }
+
+  .subtitleHeader2 > h4 {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  .contactsHeader {
+    grid-row: 6 / 7;
+    justify-self: end;
+  }
+
+  .videoBanner {
+    grid-column: 2 / 4;
+    grid-row: 7 / 8;
+  }
+
+  .banner-video > img {
+    max-width: 200px;
+    height: auto;
+  }
+
+  .videos {
+    grid-auto-columns: 200px;
+    column-gap: 15px;
+    animation: scroll 70s linear infinite;
+  }
+
+  @keyframes scroll {
+    to {
+      translate: calc(-4 * 200px);
+    }
+  }
+
+  .header-btn {
+    min-width: fit-content;
+    max-width: 230px;
+  }
+
+  .header-btn > a {
+    font-size: 1rem;
+  }
+
   .container_excursions,
   .aboutUs,
   .aboutUs_img,
@@ -892,6 +1168,10 @@ form {
   .excursionsTypes,
   .gallery {
     max-width: 380px;
+  }
+
+  .container_excursions-head > p {
+    display: none;
   }
 
   .container_excursions-cards {
@@ -947,84 +1227,88 @@ form {
   .excursionsTypes_cards-canyon {
     grid-template-columns: 30% 70%;
   }
-}
 
-footer {
-  width: 100%;
-  height: 173px;
-  background-color: #ededed;
-}
-
-.footer-container {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 25% repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  align-items: center;
-  justify-items: center;
-}
-
-.logoFooter {
-  grid-column: 1 / 2;
-  grid-row: 1 / 3;
-  width: fit-content;
-  padding-left: 3rem;
-}
-
-nav.footer-column {
-  grid-column: 2 / 3;
-  grid-row: 1 / 3;
-  justify-self: start;
-}
-
-#contactsFooter {
-  grid-column: 3 / 4;
-  grid-row: 1 / 3;
-}
-
-.footer-items {
-  list-style: none;
-  padding-left: 10px;
-}
-
-.footer-item {
-  margin-top: 7px;
-}
-
-.footer-column a {
-  text-decoration: none;
-  color: black;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.1rem;
-}
-
-.imgContacts {
-  padding-right: 5px;
-}
-
-#mediaFooter {
-  justify-self: start;
-  align-self: end;
-  padding-bottom: 5px;
-}
-
-.media-container {
-  height: 2.5rem;
-  grid-column: 4 / 5;
-  grid-row: 2 / 3;
-  justify-self: start;
-  align-self: start;
-  display: flex;
-  align-items: center;
-}
-
-@media screen and (max-width: 768px) {
-  .footer-column a {
-    font-size: 0.8rem;
+  .feedback_cards-card {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px;
   }
-}
 
-@media screen and (max-width: 440px) {
+  .container_feedback {
+    max-height: 450px;
+  }
+
+  .feedback_card1,
+  .feedback_card2 {
+    width: 280px;
+    height: 450px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 1fr;
+    padding: 20px;
+    align-items: start;
+  }
+
+  .card_img {
+    margin: 0;
+    justify-self: start;
+    max-width: 80px;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+
+  .feedback_card1,
+  .feedback_card2 > .cards-text {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    font-size: 0.9rem;
+  }
+
+  .feedback_cards {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 280px;
+    animation: scroll 35s linear infinite;
+  }
+
+  @keyframes scroll {
+    to {
+      translate: calc(-2 * 280px);
+    }
+  }
+
+  .footerForm {
+    height: 928px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-position-x: 40%;
+  }
+
+  .questionForm {
+    padding-top: 15px;
+    grid-column: 1 / 2;
+    background-color: none;
+    backdrop-filter: none;
+  }
+
+  .table {
+    padding-left: 4rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  .footerForm h4 {
+    font-size: 1.5rem;
+  }
+
+  .footerForm h5 {
+    font-size: 1rem;
+  }
+
   footer {
     min-height: 400px;
     max-height: 415px;
@@ -1152,4 +1436,12 @@ input {
   min-width: 14rem;
   border-radius: 40px;
   margin-right: 15px;
+}
+
+nav a.active {
+  color: #ffc700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  text-decoration: none;
+  margin-left: 20px;
 }
