@@ -1060,6 +1060,73 @@ nav.footer-column {
 }
 
 @media screen and (max-width: 440px) {
+
+    header {
+        max-width: 440px;
+        min-height: 900px;
+        max-height: 1115px;
+        margin-bottom: 100px;
+        background-image: url(..//images/index/header_mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    
+      .header-container {
+        height: 1115px;
+        display: grid;
+        grid-template-columns: 20px 270px 5% 25% auto;
+        grid-template-rows: 20% min-content 2% auto repeat(3, 1fr);
+        justify-items: start;
+      }
+
+      .subtitleHeader > h2 {
+        font-size: 2rem;
+      }
+    
+      .subtitleHeader2 > h4 {
+        font-size: 2rem;
+      }
+    
+      h1 {
+        font-size: 5rem;
+      }
+    
+      .contactsHeader {
+        grid-row: 6 / 7;
+        justify-self: end;
+      }
+
+      .videoBanner {
+        grid-column: 2 / 4;
+        grid-row: 7 / 8;
+      }
+    
+      .banner-video > img {
+        max-width: 200px;
+        height: auto;
+      }
+    
+      .videos {
+        grid-auto-columns: 200px;
+        column-gap: 15px;
+        animation: scroll 70s linear infinite;
+      }
+    
+      @keyframes scroll {
+        to {
+          translate: calc(-4 * 200px);
+        }
+      }
+
+      .header-btn {
+        min-width: fit-content;
+        max-width: 230px;
+      }
+
+      .header-btn > a {
+        font-size: 1rem;
+      }
+
   .container_excursions,
   .aboutUs,
   .aboutUs_img,
@@ -1205,6 +1272,7 @@ nav.footer-column {
     margin: 0;
   }
 }
+
 nav a.active {
   color: #ffc700;
   font-family: "Montserrat", sans-serif;
