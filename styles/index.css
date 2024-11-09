@@ -138,20 +138,17 @@ button {
     padding-left: 17px;
     padding-right: 17px;
     margin-top: 12px;
+}
 
-    a {
+button > a {
         text-decoration: none;
         color: white;
     }
 
-
-
-
-    a:hover {
+button > a:hover {
         color: rgba(0, 0, 0, 0.5);
         opacity: 0.8;
     }
-}
 
 
 .aboutUs_text-textExtra {
@@ -699,31 +696,31 @@ nav.footer-column {
 
 header {
     width: 100%;
-    height: 789px;
+    margin-bottom: 100px;
     background-image: url(../images/header_background_main.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .header-container {
-    height: 789px;
+    height: 910px;
     display: grid;
-    grid-template-columns: 50% 1fr 1fr 2fr 3fr;
-    grid-template-rows: 1fr 2fr 5% 10% 2fr repeat(2, 1fr);
-    gap: 10px;
-    padding: 10px;
+    grid-template-columns: 160px min-content 3% 25% auto;
+    grid-template-rows: 25% min-content 3% auto repeat(2, 1fr);
+    justify-items: start;
 }
 
 
 .logoHeader {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    padding-left: 60px;
+    width: fit-content;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: start;
 }
 
 .navHeader {
-    grid-column: 4/6;
-    grid-row: 1/2;
+    grid-column: 4 / 6;
+    grid-row: 1 / 2;
     justify-self: start;
 }
 
@@ -732,78 +729,83 @@ header {
     list-style: none;
     align-items: center;
     padding: 40px;
-
 }
 
-.header-item a {
+.header-items a {
     color: white;
-    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     text-decoration: none;
     margin-left: 20px;
+    cursor: pointer;
 }
 
-.header-item a:active {
+.header-items a:hover {
+    color: #17C1BC;
+}
+
+.header-items a:active {
     color: #ffc700;
 }
 
 .subtitleHeader {
-    grid-column: 1/3;
-    grid-row: 2/3;
-    justify-self: start;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: end;
+}
+
+.subtitleHeader > h2 {
     color: white;
-    font-family: "Montserrat", sans-serif;
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 700;
-    padding-left: 60px;
-    margin: 2.5rem 0;
 }
 
 .subtitleHeader2 {
-    grid-column: 2/4;
-    grid-row: 3/4;
-    justify-content: start;
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    justify-self: end;
+    align-self: end;
+}
+
+.subtitleHeader2 > h4 {
     color: #ffc700;
     font-family: "Great Vibes", sans-serif;
-    font-size: 48px;
+    font-size: 2.5rem;
     font-weight: 700;
-    padding-left: 60px;
-    margin: 2.5rem 0;
+    z-index: 1;
 }
 
 .titleHeader {
-    grid-column: 1/4;
-    grid-row: 4/5;
-    justify-self: start;
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    font-size: 72px;
-    font-weight: 700;
-    padding-left: 60px;
+    grid-column: 2 / 5;
+    grid-row: 3 / 5;
     margin: 2.5rem 0;
 }
 
-.header-btn {
-    grid-column: 1/2;
-    grid-row: 5/6;
-    justify-self: start;
-    background-image: linear-gradient(to right, #0499DD, #17C1BC);
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-weight: 700;
-    font-size: 12px;
-    cursor: pointer;
-    max-height: 40px;
-    min-height: 3rem;
-    font-size: 1.2rem;
-    max-width: 225px;
-    min-width: 14rem;
-    border-radius: 40px;
-    margin-right: 15px;
+.subtitleHeader, .subtitleHeader2, .titleHeader, h1 {
+    margin: 0;
+}
 
+@font-face {
+    font-family: "Helvetica", sans-serif;
+    src: url(../fonts/helvetica-neue-bold.eot);
+}
+
+h1 {
+    font-size: 8rem;
+    font-family: "Helvetica", sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    paint-order: stroke fill;
+}
+
+.header-btn {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    justify-self: start;
+    align-self: center;
+    height: 50px;
+    width: 230px;
+    max-width: 250px;
+    font-size: 1.1rem;
 }
 
 .contactsHeader {
@@ -875,7 +877,6 @@ header {
     min-width: 14rem;
     border-radius: 40px;
     margin-right: 15px;
-
 }
 
 input {
