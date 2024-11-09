@@ -8,6 +8,247 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+header {
+    width: 100%;
+    margin-bottom: 100px;
+    background-image: url(../images/header_background_main.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header-container {
+    height: 910px;
+    display: grid;
+    grid-template-columns: 160px min-content 3% 25% auto;
+    grid-template-rows: 25% min-content 3% auto repeat(2, 1fr);
+    justify-items: start;
+}
+
+.logoHeader {
+    margin: 0;
+    width: fit-content;
+    height: fit-content;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: start;
+    align-self: center;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.burger-checkbox {
+    position: absolute;
+    visibility: hidden;
+}
+
+.burger {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: none;
+    background: transparent;
+    width: 43px;
+    height: 26px;
+}
+
+.burger::before,
+.burger::after {
+    content: '';
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 6px;
+    border-radius: 10px;
+    background: white;
+}
+
+.burger::before {
+    top: 0;
+    box-shadow: 0 10px 0 white;
+    transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+
+.burger::after {
+    bottom: 0;
+    transition: bottom .3s .15s, transform .3s;
+}
+
+.burger-checkbox:checked + .burger::before {
+    top: 10px;
+    transform: rotate(45deg);
+    box-shadow: 0 8px 0 rgba(0,0,0,0);
+    transition: box-shadow .15s, top .3s, transform .3s .15s;
+    background: #FFC700;
+}
+
+.burger-checkbox:checked + .burger::after {
+    bottom: 10px;
+    transform: rotate(-45deg);
+    transition: bottom .3s, transform .3s .15s;
+    background: #FFC700;
+}
+
+.menu-list {
+    top: 40px;
+    right: 0;
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    justify-items: start;
+    gap: 12px;
+    padding: 42px 0;
+    margin: 0;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    list-style-type: none;
+    transform: translateX(100%);
+    transition: .3s;
+    width: 200px;
+}
+
+.menu-item {
+    display: block;
+    padding: 8px;
+    color: black;
+    font-size: 1rem;
+    text-align: left;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    color: #FFC700;
+}
+
+.burger-checkbox:checked ~ .menu-list {
+    transform: translateX(0);
+}
+
+.navHeader {
+    grid-column: 4 / 6;
+    grid-row: 1 / 2;
+    justify-self: start;
+    align-self: center;
+}
+
+.header-item {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 40px;
+}
+
+.header-items a {
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.header-items a:hover {
+    color: #0499dd;
+}
+
+.header-items a:active {
+    color: #ffc700;
+}
+
+.subtitleHeader {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: end;
+}
+
+.subtitleHeader > h2 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.subtitleHeader2 {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    justify-self: end;
+    align-self: end;
+}
+
+.subtitleHeader2 > h4 {
+    color: #ffc700;
+    font-family: "Great Vibes", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.titleHeader {
+    grid-column: 2 / 5;
+    grid-row: 3 / 5;
+    margin: 2.5rem 0;
+}
+
+.subtitleHeader, .subtitleHeader2, .titleHeader, h1 {
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Helvetica", sans-serif;
+    src: url(../fonts/helvetica-neue-bold.eot);
+}
+
+h1 {
+    font-size: 8rem;
+    font-family: "Helvetica", sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    paint-order: stroke fill;
+}
+
+.header-btn {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    justify-self: start;
+    align-self: center;
+    height: 50px;
+    width: 230px;
+    max-width: 250px;
+    font-size: 1.1rem;
+}
+
+.contactsHeader {
+    padding-top: 20px;
+    grid-column: 5 / 6;
+    grid-row: 4 / 5;
+    justify-self: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.videoBanner {
+    grid-column: 3 / 6;
+    grid-row: 6 / 7;
+    justify-self: start;
+    overflow: hidden;
+}
+
+.videos {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 360px;
+    column-gap: 20px;
+    animation: scroll 70s linear infinite;
+}
+
+@keyframes scroll {
+        to {
+          translate: calc(-4 * 360px);
+        }
+}
+
 .container {
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
@@ -374,6 +615,73 @@ h2 {
 
 @media screen and (max-width: 768px) {
 
+    header {
+        max-width: 768px;
+        min-height: 1000px;
+        max-height: 1115px;
+        margin-bottom: 100px;
+        background-image: url(../images/index/header_background_tablet.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    .header-container {
+        height: 1115px;
+        display: grid;
+        grid-template-columns: 80px min-content 5% 25% auto;
+        grid-template-rows: 30% min-content 2% auto 2fr 1fr;
+        justify-items: start;
+    }
+    
+    .logoHeader, .navHeader {
+        align-self: baseline;
+        padding-top: 30px;
+    }
+
+    .header-item {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .subtitleHeader > h2 {
+        font-size: 3rem;
+    }
+
+    .subtitleHeader2 > h4 {
+        font-size: 2rem;
+    }
+    
+    h1 {
+        font-size: 6rem;
+        line-height: 1;
+    }
+
+    .contactsHeader {
+        margin: 0;
+        grid-column: 4 / 5;
+        justify-self: end;
+    }
+
+    .banner-video > img {
+        max-width: 250px;
+        height: auto;
+    }
+
+    .videos {
+        grid-auto-columns: 250px;
+        column-gap: 20px;
+        animation: scroll 70s linear infinite;
+    }
+    
+    @keyframes scroll {
+            to {
+              translate: calc(-4 * 250px);
+            }
+    }
+
     .container_excursions,
     .aboutUs,
     .aboutUs_img,
@@ -694,133 +1002,7 @@ nav.footer-column {
     }
 }
 
-header {
-    width: 100%;
-    margin-bottom: 100px;
-    background-image: url(../images/header_background_main.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
 
-.header-container {
-    height: 910px;
-    display: grid;
-    grid-template-columns: 160px min-content 3% 25% auto;
-    grid-template-rows: 25% min-content 3% auto repeat(2, 1fr);
-    justify-items: start;
-}
-
-
-.logoHeader {
-    width: fit-content;
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    justify-self: start;
-}
-
-.navHeader {
-    grid-column: 4 / 6;
-    grid-row: 1 / 2;
-    justify-self: start;
-}
-
-.header-item {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    padding: 40px;
-}
-
-.header-items a {
-    color: white;
-    font-size: 14px;
-    text-decoration: none;
-    margin-left: 20px;
-    cursor: pointer;
-}
-
-.header-items a:hover {
-    color: #17C1BC;
-}
-
-.header-items a:active {
-    color: #ffc700;
-}
-
-.subtitleHeader {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    align-self: end;
-}
-
-.subtitleHeader > h2 {
-    color: white;
-    font-size: 4rem;
-    font-weight: 700;
-}
-
-.subtitleHeader2 {
-    grid-column: 2 / 4;
-    grid-row: 3 / 4;
-    justify-self: end;
-    align-self: end;
-}
-
-.subtitleHeader2 > h4 {
-    color: #ffc700;
-    font-family: "Great Vibes", sans-serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-    z-index: 1;
-}
-
-.titleHeader {
-    grid-column: 2 / 5;
-    grid-row: 3 / 5;
-    margin: 2.5rem 0;
-}
-
-.subtitleHeader, .subtitleHeader2, .titleHeader, h1 {
-    margin: 0;
-}
-
-@font-face {
-    font-family: "Helvetica", sans-serif;
-    src: url(../fonts/helvetica-neue-bold.eot);
-}
-
-h1 {
-    font-size: 8rem;
-    font-family: "Helvetica", sans-serif;
-    color: transparent;
-    -webkit-text-stroke: 2px white;
-    paint-order: stroke fill;
-}
-
-.header-btn {
-    grid-column: 2 / 3;
-    grid-row: 5 / 6;
-    justify-self: start;
-    align-self: center;
-    height: 50px;
-    width: 230px;
-    max-width: 250px;
-    font-size: 1.1rem;
-}
-
-.contactsHeader {
-    grid-column: 5/6;
-    grid-row: 4/5;
-    justify-self: start;
-    display: flex;
-    flex-direction: column;
-}
-
-.videoBanner {
-    grid-column: 4/6;
-    grid-row: 1/2;
-    justify-self: start;
-}
 
 .footerForm {
     background: url('../images/form_background_main.svg');
