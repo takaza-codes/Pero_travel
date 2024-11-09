@@ -826,28 +826,50 @@ h1 {
     background: url('../images/form_background_main.svg');
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 160px;
     width: 1440px;
     height: 640px;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60% auto;
 }
 
 .questionForm {
     grid-column: 2/3;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0.9;
-    /* filter: blur(8px) */
+    backdrop-filter: blur(8px)
+    
 }
 
 .table {
     width: 560px;
     height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;  
+}
+
+.form-group {
+    padding-bottom: 30px;
 }
 
 .footerForm h4 {
     color: white;
+    font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 700;
+    margin: 0;
+    padding-left: 170px;
 }
 
 .footerForm h5 {
@@ -855,6 +877,8 @@ h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 500;
+    margin: 0;
+    padding-left: 170px;
 }
 
 .footerForm-btn {
@@ -877,8 +901,4 @@ h1 {
     min-width: 14rem;
     border-radius: 40px;
     margin-right: 15px;
-}
-
-input {
-    background-color: transparent;
 }
