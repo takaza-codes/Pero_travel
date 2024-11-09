@@ -163,11 +163,16 @@ button {
 
 .aboutUs_text {
     background-color: #EDEDED;
+    border-radius: 10px;
     grid-row: 2/3;
     grid-column: 2/4;
     display: grid;
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: 20% 60% 20%;
+}
+
+.link {
+    color: rgb(0, 0, 0);
 }
 
 .aboutUs_img {
@@ -208,11 +213,7 @@ h2 {
     max-width: 1200px;
 }
 
-.excursionsTypes_cards-bus {
-    grid-column: 1/2;
-    display: grid;
-    grid-template-columns: 15% 85%;
-}
+
 
 .feedback_cards {
     display: grid;
@@ -246,20 +247,26 @@ h2 {
     align-items: center;
 }
 
+.excursionsTypes_cards-bus {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 23% 77%;
+}
+
 .excursionsTypes_cards-jeep {
     grid-column: 2/3;
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 23% 77%;
 }
 
 .excursionsTypes_cards-yacht {
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 23% 77%;
 }
 
 .excursionsTypes_cards-canyon {
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 23% 77%;
 }
 
 .gallery,
@@ -815,14 +822,14 @@ header {
     width: 1440px;
     height: 640px;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 50% 50%;
 }
 
 .questionForm {
     grid-column: 2/3;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0.9;
-    /* backdrop-filter: blur(8px) */
+    /* filter: blur(8px) */
 }
 
 .table {
@@ -832,7 +839,6 @@ header {
 
 .footerForm h4 {
     color: white;
-    font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 700;
 }
