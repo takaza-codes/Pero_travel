@@ -202,7 +202,7 @@ header .header_btn a {
   text-decoration: none;
 }
 
-.liked input[type="checkbox"] {
+.liked input[type=checkbox] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -214,7 +214,7 @@ header .header_btn a {
   cursor: pointer;
 }
 
-.liked input[type="checkbox"]:checked {
+.liked input[type=checkbox]:checked {
   background-image: url(../images/favorite_active.svg);
 }
 
@@ -255,7 +255,7 @@ main .main_description .main_description_card-wrapper .ticket-card {
   height: 6rem;
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   padding: 0.71rem;
@@ -306,83 +306,34 @@ main .main_calendary-block .calendary-block_calendar .calendar_wrapper {
   padding: 2rem;
   border-radius: 15px;
 }
-main
-  .main_calendary-block
-  .calendary-block_calendar
-  .calendar_wrapper
-  .calendar_header {
+main .main_calendary-block .calendary-block_calendar .calendar_wrapper .calendar_header {
   display: flex;
   justify-content: space-between;
   font-size: 1.3rem;
 }
-main
-  .main_calendary-block
-  .calendary-block_calendar
-  .calendar_wrapper
-  .calendar_header
-  a {
+main .main_calendary-block .calendary-block_calendar .calendar_wrapper .calendar_header a {
   text-decoration: none;
   color: #0499dd;
 }
-main
-  .main_calendary-block
-  .calendary-block_calendar
-  .calendar_wrapper
-  .calendar {
+main .main_calendary-block .calendary-block_calendar .calendar_wrapper .calendar {
   width: 100%;
   height: 100%;
   padding: 2rem 0;
 }
-main
-  .main_calendary-block
-  .calendary-block_calendar
-  .calendar_wrapper
-  .calendar
-  th,
-main
-  .main_calendary-block
-  .calendary-block_calendar
-  .calendar_wrapper
-  .calendar
-  td {
+main .main_calendary-block .calendary-block_calendar .calendar_wrapper .calendar th,
+main .main_calendary-block .calendary-block_calendar .calendar_wrapper .calendar td {
   width: 14.28%; /* Разделение на 7 колонок */
   text-align: center;
   padding: 0.8rem;
 }
-main
-  .main_calendary-block
-  .calendary-block_calendar
-  .calendar_wrapper
-  .calendar
-  th
-  .date,
-main
-  .main_calendary-block
-  .calendary-block_calendar
-  .calendar_wrapper
-  .calendar
-  td
-  .date {
+main .main_calendary-block .calendary-block_calendar .calendar_wrapper .calendar th .date,
+main .main_calendary-block .calendary-block_calendar .calendar_wrapper .calendar td .date {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-main
-  .main_calendary-block
-  .calendary-block_calendar
-  .calendar_wrapper
-  .calendar
-  th
-  .date
-  .time,
-main
-  .main_calendary-block
-  .calendary-block_calendar
-  .calendar_wrapper
-  .calendar
-  td
-  .date
-  .time {
+main .main_calendary-block .calendary-block_calendar .calendar_wrapper .calendar th .date .time,
+main .main_calendary-block .calendary-block_calendar .calendar_wrapper .calendar td .date .time {
   font-size: 0.5rem;
   color: #0499dd;
 }
@@ -425,7 +376,7 @@ main .main_rout-block .rout-block_carousel .carousel .wrapper img {
   width: 20rem;
   height: 30rem;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 25px;
 }
 @keyframes scroll {
@@ -453,11 +404,7 @@ main .main_extra-costs .extra-costs_cards {
 main .main_extra-costs .extra-costs_cards .extra-costs_card-wrapper {
   position: relative;
 }
-main
-  .main_extra-costs
-  .extra-costs_cards
-  .extra-costs_card-wrapper
-  .icon-background {
+main .main_extra-costs .extra-costs_cards .extra-costs_card-wrapper .icon-background {
   background-color: #ffc700;
   position: absolute;
   top: -1.1rem;
@@ -467,16 +414,12 @@ main
   border-radius: 50%;
   z-index: 0;
 }
-main
-  .main_extra-costs
-  .extra-costs_cards
-  .extra-costs_card-wrapper
-  .ticket-card {
+main .main_extra-costs .extra-costs_cards .extra-costs_card-wrapper .ticket-card {
   width: 12rem;
   height: 6rem;
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   padding: 0.71rem;
@@ -490,22 +433,11 @@ main .main_extra-costs .extra-costs_cards .extra-costs_card-wrapper .content {
   text-align: center;
   padding: 0.5rem 0;
 }
-main
-  .main_extra-costs
-  .extra-costs_cards
-  .extra-costs_card-wrapper
-  .content
-  .icon {
+main .main_extra-costs .extra-costs_cards .extra-costs_card-wrapper .content .icon {
   height: 1.8rem;
   width: 2rem;
 }
-main
-  .main_extra-costs
-  .extra-costs_cards
-  .extra-costs_card-wrapper
-  .content
-  .text
-  .price {
+main .main_extra-costs .extra-costs_cards .extra-costs_card-wrapper .content .text .price {
   font-weight: 700;
   font-size: 1.71rem;
   color: #0499dd;
@@ -534,36 +466,16 @@ main .main_important-info .important-info_block .important-info_doc {
   flex-direction: column;
   justify-content: space-between;
 }
-main
-  .main_important-info
-  .important-info_block
-  .important-info_doc
-  .doc_title
-  h4 {
+main .main_important-info .important-info_block .important-info_doc .doc_title h4 {
   color: black;
 }
-main
-  .main_important-info
-  .important-info_block
-  .important-info_doc
-  .doc_passport {
+main .main_important-info .important-info_block .important-info_doc .doc_passport {
   display: flex;
 }
-main
-  .main_important-info
-  .important-info_block
-  .important-info_doc
-  .doc_passport
-  .doc_content {
+main .main_important-info .important-info_block .important-info_doc .doc_passport .doc_content {
   padding: 0 3rem;
 }
-main
-  .main_important-info
-  .important-info_block
-  .important-info_doc
-  .doc_passport
-  .doc_content
-  p {
+main .main_important-info .important-info_block .important-info_doc .doc_passport .doc_content p {
   padding-top: 2rem;
 }
 main .main_important-info .import-info_frames {
@@ -603,7 +515,7 @@ main .main_gallery-block .gallery_img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
 }
 main .main_gallery-block .gallery_img .item1 {
@@ -680,47 +592,21 @@ main .main_comment-block .comment_carousel .carousel .wrapper .comment_item {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #d4d4d4;
 }
-main
-  .main_comment-block
-  .comment_carousel
-  .carousel
-  .wrapper
-  .comment_item
-  img {
+main .main_comment-block .comment_carousel .carousel .wrapper .comment_item img {
   width: 30%;
   height: 100%;
   margin: 1 rem;
 }
-main
-  .main_comment-block
-  .comment_carousel
-  .carousel
-  .wrapper
-  .comment_item
-  .text {
+main .main_comment-block .comment_carousel .carousel .wrapper .comment_item .text {
   width: 30rem;
   padding-left: 2rem;
 }
-main
-  .main_comment-block
-  .comment_carousel
-  .carousel
-  .wrapper
-  .comment_item
-  .text
-  h4 {
+main .main_comment-block .comment_carousel .carousel .wrapper .comment_item .text h4 {
   font-weight: 700;
   font-size: 1.2;
   margin: 0;
 }
-main
-  .main_comment-block
-  .comment_carousel
-  .carousel
-  .wrapper
-  .comment_item
-  .text
-  p {
+main .main_comment-block .comment_carousel .carousel .wrapper .comment_item .text p {
   margin-top: 0.5rem;
 }
 @keyframes scroll {
@@ -853,11 +739,7 @@ nav.footer-column {
     flex-direction: column;
     margin-bottom: 2rem;
   }
-  main
-    .main_important-info
-    .important-info_block
-    .important-info_doc
-    .doc_title {
+  main .main_important-info .important-info_block .important-info_doc .doc_title {
     margin-bottom: 2rem;
   }
   main .main_important-info .import-info_frames {
@@ -954,8 +836,116 @@ nav.footer-column {
   main .main_rout-block .rout-block_carousel .carousel {
     width: 30rem;
   }
-} /*# sourceMappingURL=tour_overview.css.map */
-
+  main .main_important-info .important-info_block {
+    height: auto;
+  }
+  main .main_important-info .important-info_block .important-info_doc .doc_passport {
+    align-items: flex-start;
+    padding: 1rem 0;
+  }
+  main .main_important-info .important-info_block .import-info_frames {
+    flex-direction: column;
+  }
+  main .main_important-info .important-info_block .import-info_frames .import-info_frame {
+    text-align: center;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  main .main_gallery-block .gallery-block_title {
+    align-items: baseline;
+  }
+  main .main_gallery-block .gallery_img {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr 2fr;
+  }
+  main .main_gallery-block .gallery_img .item2 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  main .main_gallery-block .gallery_img .item3 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  main .main_gallery-block .gallery_img .item5 {
+    grid-column: 2/3;
+    grid-row: 4/6;
+  }
+  main .main_gallery-block .gallery_img .item4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  main .main_gallery-block .gallery_img .item6 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  main .main_gallery-block .gallery_img .item7 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  main .main_gallery-block .gallery_img .item8 {
+    grid-column: 1/3;
+    grid-row: 6/7;
+  }
+  main .main_gallery-block .gallery_img .item1 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  main .main_comment-block .comment-block_title {
+    align-items: baseline;
+  }
+  main .main_comment-block .comment_carousel .carousel .wrapper .comment_item {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    flex-direction: column;
+    flex-shrink: 1;
+  }
+  main .main_comment-block .comment_carousel .carousel .wrapper .comment_item .text {
+    width: 15rem;
+    padding-left: 0;
+    margin-top: 1rem;
+  }
+  footer {
+    min-height: 400px;
+    max-height: 415px;
+  }
+  footer .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 45% 10% 30% auto;
+  }
+  footer .footer-container .logoFooter {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding: 0;
+  }
+  footer .footer-container .media-container {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    justify-self: center;
+  }
+  footer .footer-container nav.footer-column {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: end;
+  }
+  footer .footer-container #contactsFooter {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: start;
+    align-self: end;
+  }
+  footer .footer-container #mediaFooter {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-self: start;
+    align-self: start;
+  }
+  footer .footer-container .footer-items {
+    margin: 0;
+  }
+}
 .footerForm {
   margin-top: 160px;
   width: 100%;
@@ -994,8 +984,7 @@ nav.footer-column {
   flex-direction: column;
   gap: 2rem;
 }
-.form-top input,
-.form-top select {
+.form-top input, .form-top select {
   border: none;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
   background-color: #fff;
@@ -1007,8 +996,7 @@ nav.footer-column {
   min-width: 324px;
 }
 
-input:focus,
-select:focus {
+input:focus, select:focus {
   outline: 0;
 }
 
@@ -1016,58 +1004,69 @@ input {
   padding-left: 1rem;
 }
 
-.form-location {
-  select {
-    appearance: none;
-    background: url(../images/all_tours/location_icon.svg);
-    background-repeat: no-repeat;
-    background-size: 1rem;
-    background-position-x: 95%;
-    background-position-y: 50%;
-    padding-left: 1rem;
-  }
+.form-date input[type=date]::-webkit-calendar-picker-indicator {
+  box-sizing: border-box;
+  background: url(../images/all_tours/calendar_icon.svg);
+  background-size: 1.3rem;
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 60%;
+}
+.form-date input[type=date i] {
+  padding-inline-start: 0.9rem;
+  padding-inline-end: 1.1rem;
 }
 
-.form-people {
-  select {
-    appearance: none;
-    background: url(../images/all_tours/people_icon.svg);
-    background-repeat: no-repeat;
-    background-size: 1.3rem;
-    background-position-x: 95%;
-    background-position-y: 50%;
-    padding-left: 1rem;
-  }
+.form-people select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(../images/all_tours/people_icon.svg);
+  background-repeat: no-repeat;
+  background-size: 1.3rem;
+  background-position-x: 95%;
+  background-position-y: 50%;
+  padding-left: 1rem;
 }
 
-.form-date {
-  input[type="date"]::-webkit-calendar-picker-indicator {
-    box-sizing: border-box;
-    background: url(../images/all_tours/calendar_icon.svg);
-    background-size: 1.3rem;
-    background-repeat: no-repeat;
-    background-position-x: 95%;
-    background-position-y: 50%;
-  }
-
-  input[type="date" i] {
-    padding-inline-start: 0.2rem;
-    padding-inline-end: 0.2rem;
-  }
+.form-child select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(../images/all_tours/people_icon.svg);
+  background-repeat: no-repeat;
+  background-size: 1.3rem;
+  background-position-x: 95%;
+  background-position-y: 50%;
+  padding-left: 1rem;
 }
 
 .button-top {
-  @include button(
-    $button-text-color,
-    $button-color,
-    $secondary-font-weight,
-    $main-font-size
-  );
-
-  max-height: 4rem;
-  min-height: 3rem;
-  font-size: 1.2rem;
-  max-width: 225px;
-  min-width: 14rem;
-  border-radius: 10px;
+  background-image: linear-gradient(to right, #0499dd, #17c1bc);
+  border: none;
+  color: white;
+  border-radius: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+  max-height: 40px;
+  min-height: 35px;
+  max-width: 265px;
+  min-width: 265px;
+  margin-right: 20px;
 }
+.button-top:hover {
+  color: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+}
+.button-top a {
+  text-decoration: none;
+  color: white;
+}
+.button-top a:hover {
+  color: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+}/*# sourceMappingURL=tour_overview.css.map */
