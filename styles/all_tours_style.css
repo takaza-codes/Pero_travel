@@ -16,6 +16,7 @@ header {
   background-image: url(..//images/all_tours/header_adaptive.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-y: 60%;
 }
 
 .header-container {
