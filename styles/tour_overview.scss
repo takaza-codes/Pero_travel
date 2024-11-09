@@ -782,30 +782,6 @@ input {
   padding-left: 1rem;
 }
 
-.form-location {
-  select {
-      appearance: none;
-      background: url(../images/all_tours/location_icon.svg);
-      background-repeat: no-repeat;
-      background-size: 1rem;
-      background-position-x: 95%;
-      background-position-y: 50%;
-      padding-left: 1rem;
-  }
-}
-
-.form-people {
-  select {
-      appearance: none;
-      background: url(../images/all_tours/people_icon.svg);
-      background-repeat: no-repeat;
-      background-size: 1.3rem;
-      background-position-x: 95%;
-      background-position-y: 50%;
-      padding-left: 1rem;
-  }
-}
-
 .form-date {
   input[type="date"]::-webkit-calendar-picker-indicator {
       box-sizing: border-box;
@@ -821,6 +797,31 @@ input {
       padding-inline-end: 0.2rem;
   }
 }
+
+.form-people {
+  select {
+      appearance: none;
+      background: url(../images/all_tours/people_icon.svg);
+      background-repeat: no-repeat;
+      background-size: 1.3rem;
+      background-position-x: 95%;
+      background-position-y: 50%;
+      padding-left: 1rem;
+  }
+}
+
+.form-child {
+  select {
+      appearance: none;
+      background: url(../images/all_tours/people_icon.svg);
+      background-repeat: no-repeat;
+      background-size: 1.3rem;
+      background-position-x: 95%;
+      background-position-y: 50%;
+      padding-left: 1rem;
+  }
+}
+
 
 .button-top {
   @include button($button-text-color, $button-color, $secondary-font-weight, $main-font-size);
