@@ -618,10 +618,146 @@ main .main_comment-block .comment_carousel .carousel .wrapper .comment_item .tex
   }
 }
 
+.footerForm {
+  margin-top: 3rem;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.imgForm {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.footerFormTour {
+  background-color: white;
+  padding: 0 7rem;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.footerFormButton {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+
+.footerFormTour h4 {
+  padding-top: 130px;
+  padding-bottom: 50px;
+  font-weight: 700;
+  font-size: 1.71rem;
+  color: #0499dd;
+}
+
+.form-top {
+  min-height: 12rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.form-top input,
+.form-top select {
+  border: none;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  max-height: 4rem;
+  min-height: 3.4rem;
+  font-size: 1.2rem;
+  border-radius: 0.8rem;
+  max-width: 335px;
+  min-width: 324px;
+}
+
+input:focus,
+select:focus {
+  outline: 0;
+}
+
+input {
+  padding-left: 1rem;
+}
+
+.form-date input[type=date]::-webkit-calendar-picker-indicator {
+  box-sizing: border-box;
+  background: url(../images/all_tours/calendar_icon.svg);
+  background-size: 1.3rem;
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 60%;
+}
+.form-date input[type=date i] {
+  padding-inline-start: 0.9rem;
+  padding-inline-end: 1.1rem;
+}
+
+.form-people select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(../images/all_tours/people_icon.svg);
+  background-repeat: no-repeat;
+  background-size: 1.3rem;
+  background-position-x: 95%;
+  background-position-y: 50%;
+  padding-left: 1rem;
+}
+
+.form-child select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(../images/all_tours/people_icon.svg);
+  background-repeat: no-repeat;
+  background-size: 1.3rem;
+  background-position-x: 95%;
+  background-position-y: 50%;
+  padding-left: 1rem;
+}
+
+.button-top {
+  background-image: linear-gradient(to right, #0499dd, #17c1bc);
+  border: none;
+  color: white;
+  border-radius: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+  max-height: 40px;
+  min-height: 35px;
+  max-width: 265px;
+  min-width: 265px;
+  margin-right: 20px;
+}
+.button-top:hover {
+  color: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+}
+.button-top a {
+  text-decoration: none;
+  color: white;
+}
+.button-top a:hover {
+  color: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+}
+
+nav a.active {
+  color: #ffc700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
 footer {
   width: 100%;
   height: 173px;
-  background-color: #ededed;
 }
 
 .footer-container {
@@ -631,6 +767,7 @@ footer {
   grid-template-rows: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
+  background-color: #ededed;
 }
 
 .logoFooter {
@@ -782,7 +919,10 @@ nav.footer-column {
     grid-column: 1/3;
     grid-row: 4/5;
   }
-  .footer-column a {
+  footer .footerForm {
+    grid-template-columns: 40% 60%;
+  }
+  footer .footer-column a {
     font-size: 0.8rem;
   }
 }
@@ -910,6 +1050,30 @@ nav.footer-column {
     min-height: 400px;
     max-height: 415px;
   }
+  footer .footerForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footerForm .imgForm img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  footer .footerForm .footerFormTour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    padding: 0 2rem;
+    padding-bottom: 15rem;
+  }
+  footer .footerForm .footerFormTour h4 {
+    text-align: center;
+    padding-top: 4rem;
+  }
   footer .footer-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 45% 10% 30% auto;
@@ -945,136 +1109,4 @@ nav.footer-column {
   footer .footer-container .footer-items {
     margin: 0;
   }
-}
-.footerForm {
-  margin-top: 160px;
-  width: 100%;
-  height: 640px;
-  display: grid;
-  grid-template-columns: 70% 30%;
-}
-
-.imgForm {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
-.footerFormTour {
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-
-.footerFormButton {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 40px;
-}
-
-.footerFormTour h4 {
-  padding-top: 130px;
-  padding-bottom: 50px;
-  font-weight: 700;
-  font-size: 1.71rem;
-  color: #0499dd;
-}
-
-.form-top {
-  min-height: 12rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.form-top input, .form-top select {
-  border: none;
-  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  max-height: 4rem;
-  min-height: 3.4rem;
-  font-size: 1.2rem;
-  border-radius: 0.8rem;
-  max-width: 335px;
-  min-width: 324px;
-}
-
-input:focus, select:focus {
-  outline: 0;
-}
-
-input {
-  padding-left: 1rem;
-}
-
-.form-date input[type=date]::-webkit-calendar-picker-indicator {
-  box-sizing: border-box;
-  background: url(../images/all_tours/calendar_icon.svg);
-  background-size: 1.3rem;
-  background-repeat: no-repeat;
-  background-position-x: 95%;
-  background-position-y: 60%;
-}
-.form-date input[type=date i] {
-  padding-inline-start: 0.9rem;
-  padding-inline-end: 1.1rem;
-}
-
-.form-people select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background: url(../images/all_tours/people_icon.svg);
-  background-repeat: no-repeat;
-  background-size: 1.3rem;
-  background-position-x: 95%;
-  background-position-y: 50%;
-  padding-left: 1rem;
-}
-
-.form-child select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background: url(../images/all_tours/people_icon.svg);
-  background-repeat: no-repeat;
-  background-size: 1.3rem;
-  background-position-x: 95%;
-  background-position-y: 50%;
-  padding-left: 1rem;
-}
-
-.button-top {
-  background-image: linear-gradient(to right, #0499dd, #17c1bc);
-  border: none;
-  color: white;
-  border-radius: 40px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-weight: 700;
-  font-size: 12px;
-  cursor: pointer;
-  max-height: 40px;
-  min-height: 35px;
-  max-width: 265px;
-  min-width: 265px;
-  margin-right: 20px;
-}
-.button-top:hover {
-  color: rgba(0, 0, 0, 0.5);
-  opacity: 0.8;
-}
-.button-top a {
-  text-decoration: none;
-  color: white;
-}
-.button-top a:hover {
-  color: rgba(0, 0, 0, 0.5);
-  opacity: 0.8;
-}
-
-nav a.active {
-  color: #ffc700;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.1rem;
-  text-decoration: none;
-  margin-left: 20px;
 }/*# sourceMappingURL=tour_overview.css.map */
