@@ -835,8 +835,8 @@ h1 {
 
 .questionForm {
     grid-column: 2/3;
-    backdrop-filter: blur(8px)
-    
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
 }
 
 .table {
