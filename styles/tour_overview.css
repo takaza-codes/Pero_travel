@@ -625,8 +625,7 @@ nav.footer-column {
   main .main_rout-block .rout-block_carousel .carousel {
     width: 30rem;
   }
-}/*# sourceMappingURL=tour_overview.css.map */
-
+}
 .footerForm {
   margin-top: 160px;
   width: 100%;
@@ -643,16 +642,20 @@ nav.footer-column {
 .footerFormTour {
   grid-column: 2/3;
   grid-row: 1/2;
-} 
+}
 
 .footerFormButton {
   display: flex;
   justify-content: flex-start;
+  margin-top: 40px;
 }
 
 .footerFormTour h4 {
   padding-top: 130px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
+  font-weight: 700;
+  font-size: 1.71rem;
+  color: #0499dd;
 }
 
 .form-top {
@@ -660,18 +663,17 @@ nav.footer-column {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-
-  input, select {
-      border: none;
-      box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
-      background-color: #fff;
-      max-height: 4rem;
-      min-height: 3rem;
-      font-size: 1.2rem;
-      border-radius: 0.8rem;
-      max-width: 235px;
-      min-width: 224px;
-  }
+}
+.form-top input, .form-top select {
+  border: none;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  max-height: 4rem;
+  min-height: 3.4rem;
+  font-size: 1.2rem;
+  border-radius: 0.8rem;
+  max-width: 335px;
+  min-width: 324px;
 }
 
 input:focus, select:focus {
@@ -682,53 +684,69 @@ input {
   padding-left: 1rem;
 }
 
-.form-location {
-  select {
-      appearance: none;
-      background: url(../images/all_tours/location_icon.svg);
-      background-repeat: no-repeat;
-      background-size: 1rem;
-      background-position-x: 95%;
-      background-position-y: 50%;
-      padding-left: 1rem;
-  }
+.form-date input[type=date]::-webkit-calendar-picker-indicator {
+  box-sizing: border-box;
+  background: url(../images/all_tours/calendar_icon.svg);
+  background-size: 1.3rem;
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 60%;
+}
+.form-date input[type=date i] {
+  padding-inline-start: 0.9rem;
+  padding-inline-end: 1.1rem;
 }
 
-.form-people {
-  select {
-      appearance: none;
-      background: url(../images/all_tours/people_icon.svg);
-      background-repeat: no-repeat;
-      background-size: 1.3rem;
-      background-position-x: 95%;
-      background-position-y: 50%;
-      padding-left: 1rem;
-  }
+.form-people select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(../images/all_tours/people_icon.svg);
+  background-repeat: no-repeat;
+  background-size: 1.3rem;
+  background-position-x: 95%;
+  background-position-y: 50%;
+  padding-left: 1rem;
 }
 
-.form-date {
-  input[type="date"]::-webkit-calendar-picker-indicator {
-      box-sizing: border-box;
-      background: url(../images/all_tours/calendar_icon.svg);
-      background-size: 1.3rem;
-      background-repeat: no-repeat;
-      background-position-x: 95%;
-      background-position-y: 50%;
-  }
-
-  input[type="date" i] {
-      padding-inline-start: 0.2rem;
-      padding-inline-end: 0.2rem;
-  }
+.form-child select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(../images/all_tours/people_icon.svg);
+  background-repeat: no-repeat;
+  background-size: 1.3rem;
+  background-position-x: 95%;
+  background-position-y: 50%;
+  padding-left: 1rem;
 }
 
 .button-top {
-  @include button($button-text-color, $button-color, $secondary-font-weight, $main-font-size);
-  
-  max-height: 4rem;
-  min-height: 3rem;
-  font-size: 1.2rem;
-  max-width: 225px;
-  min-width: 14rem;
-  border-radius: 10px;
+  background-image: linear-gradient(to right, #0499dd, #17c1bc);
+  border: none;
+  color: white;
+  border-radius: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+  max-height: 40px;
+  min-height: 35px;
+  max-width: 265px;
+  min-width: 265px;
+  margin-right: 20px;
 }
+.button-top:hover {
+  color: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+}
+.button-top a {
+  text-decoration: none;
+  color: white;
+}
+.button-top a:hover {
+  color: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+}/*# sourceMappingURL=tour_overview.css.map */

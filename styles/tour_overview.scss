@@ -748,11 +748,14 @@ nav.footer-column {
 .footerFormButton {
   display: flex;
   justify-content: flex-start;
+  margin-top: 40px;
 }
 
 .footerFormTour h4 {
   padding-top: 130px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
+  @include for-title;
+  color: $primary-color;
 }
 
 .form-top {
@@ -766,11 +769,11 @@ nav.footer-column {
       box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
       background-color: #fff;
       max-height: 4rem;
-      min-height: 3rem;
+      min-height: 3.4rem;
       font-size: 1.2rem;
       border-radius: 0.8rem;
-      max-width: 235px;
-      min-width: 224px;
+      max-width: 335px;
+      min-width: 324px;
   }
 }
 
@@ -789,12 +792,12 @@ input {
       background-size: 1.3rem;
       background-repeat: no-repeat;
       background-position-x: 95%;
-      background-position-y: 50%;
+      background-position-y: 60%;
   }
 
   input[type="date" i] {
-      padding-inline-start: 0.2rem;
-      padding-inline-end: 0.2rem;
+      padding-inline-start: 0.9rem;
+      padding-inline-end: 1.1rem;
   }
 }
 
@@ -822,14 +825,11 @@ input {
   }
 }
 
-
 .button-top {
   @include button($button-text-color, $button-color, $secondary-font-weight, $main-font-size);
-  
-  max-height: 4rem;
-  min-height: 3rem;
-  font-size: 1.2rem;
-  max-width: 225px;
-  min-width: 14rem;
-  border-radius: 10px;
+  max-height: 40px;
+  min-height: 35px;
+  max-width: 265px;
+  min-width: 265px;
+  margin-right: 20px;
 }
