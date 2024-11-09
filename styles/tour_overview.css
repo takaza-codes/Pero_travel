@@ -625,4 +625,21 @@ nav.footer-column {
   main .main_rout-block .rout-block_carousel .carousel {
     width: 30rem;
   }
+}
+.footerForm {
+  margin-top: 160px;
+  width: 100%;
+  height: 640px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.imgForm {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.footerFormTour {
+  grid-column: 2/3;
+  grid-row: 1/2;
 }/*# sourceMappingURL=tour_overview.css.map */
