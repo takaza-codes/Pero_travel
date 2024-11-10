@@ -34,6 +34,14 @@ header {
   align-self: center;
 }
 
+nav a.active {
+  color: #ffc700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
 .burger-menu {
   display: none;
 }
@@ -667,6 +675,7 @@ form {
   font-size: 2rem;
   font-weight: 700;
   margin: 0;
+  padding-left: 0;
 }
 
 .footerForm h5 {
@@ -675,6 +684,7 @@ form {
   font-size: 1.1rem;
   font-weight: 500;
   margin: 0;
+  padding-left: 0;
 }
 
 .footerForm-btn {
@@ -1357,91 +1367,5 @@ nav.footer-column {
   }
 }
 
-.footerForm {
-  background: url("../images/form_background_main.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 160px;
-  width: 1440px;
-  height: 640px;
-  display: grid;
-  grid-template-columns: 40% 60% auto;
-}
 
-.questionForm {
-  grid-column: 2/3;
-  background-color: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(8px);
-}
 
-.table {
-  width: 560px;
-  height: 640px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-label {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-}
-
-input {
-  border: none;
-  border-bottom: 1px solid white;
-  background-color: transparent;
-}
-
-.form-group {
-  padding-bottom: 30px;
-}
-
-.footerForm h4 {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  margin: 0;
-  padding-left: 170px;
-}
-
-.footerForm h5 {
-  color: #ffc700;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  margin: 0;
-  padding-left: 170px;
-}
-
-.footerForm-btn {
-  grid-column: 1/2;
-  grid-row: 5/6;
-  justify-self: start;
-  background-image: linear-gradient(to right, #0499dd, #17c1bc);
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-weight: 700;
-  font-size: 12px;
-  cursor: pointer;
-  max-height: 40px;
-  min-height: 3rem;
-  font-size: 1.2rem;
-  max-width: 225px;
-  min-width: 14rem;
-  border-radius: 40px;
-  margin-right: 15px;
-}
-
-nav a.active {
-  color: #ffc700;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.1rem;
-  text-decoration: none;
-  margin-left: 20px;
-}
