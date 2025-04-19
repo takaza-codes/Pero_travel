@@ -5,4 +5,4 @@
 
 ## Contributors
 
-[![Contributors](https://contrib.rocks/image?repo=takaza-codes/Pero_travel)](https://github.com/takaza-codes/Pero_travel/graphs/contributors)![image](https://github.com/user-attachments/assets/68e4e2a1-ba89-4ae0-af66-78044eb4a152)
+[![Contributors](https://contrib.rocks/image?repo=takaza-codes/Pero_travel)](https://github.com/takaza-codes/Pero_travel/graphs/contributors)
