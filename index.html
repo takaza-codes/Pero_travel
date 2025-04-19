@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="shortcut icon" href="./images/logo_color.svg" type="svg/xml" />
+    <title>Pero Travel</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logoHeader">
+          <a href="index.html" target="_blank"
+            ><img class="imgLogo" src="./images/logo.svg" alt="Лого"
+          /></a>
+        </div>
+        <nav class="navHeader">
+          <ul class="header-item">
+            <li class="header-items">
+              <a href="/index.html" class="active" target="_blank">Главная</a>
+            </li>
+            <li class="header-items">
+              <a href="./pages/all_tours.html" target="_blank">Экскурсии</a>
+            </li>
+            <li class="header-items">
+              <a href="#" target="_blank">Личный кабинет</a>
+            </li>
+          </ul>
+          <div class="burger-menu">
+            <input
+              type="checkbox"
+              id="burger-checkbox"
+              class="burger-checkbox"
+            />
+            <label for="burger-checkbox" class="burger"></label>
+            <ul class="menu-list">
+              <li><a href="#" class="menu-item" target="_blank">Главная</a></li>
+              <li>
+                <a href="#" class="menu-item" target="_blank">Экскурсии</a>
+              </li>
+              <li>
+                <a href="#" class="menu-item" target="_blank">Личный кабинет</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="subtitleHeader">
+          <h2>ПУТЕШЕСТВУЙ</h2>
+        </div>
+        <div class="subtitleHeader2">
+          <h4>вместе с</h4>
+        </div>
+        <div class="titleHeader">
+          <h1>PERO TRAVEL</h1>
+        </div>
+        <button class="header-btn">
+          <a href="./pages/all_tours.html" target="_blank"
+            >К экскурсиям <img src="../images/index/arrow.svg" alt=""
+          /></a>
+        </button>
+        <div class="contactsHeader">
+          <a href="#" target="_blank"
+            ><img src="./images/vk.svg" alt="Контакт vk"
+          /></a>
+          <a href="#" target="_blank"
+            ><img src="./images/inst.svg" alt="Контакт instagram"
+          /></a>
+          <a href="#" target="_blank"
+            ><img src="./images/facebook.svg" alt="Контакт facebook"
+          /></a>
+        </div>
+        <div class="videoBanner">
+          <div class="videos">
+            <div class="banner-video">
+              <img src="./images/index/vid1.svg" alt="Видео с экскурсии" />
+            </div>
+            <div class="banner-video">
+              <img src="./images/index/vid2.svg" alt="Видео с экскурсии" />
+            </div>
+            <div class="banner-video">
+              <img src="./images/index/vid1.svg" alt="Видео с экскурсии" />
+            </div>
+            <div class="banner-video">
+              <img src="./images/index/vid2.svg" alt="Видео с экскурсии" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div class="container_excursions">
+        <div class="container_excursions-head">
+          <h3>Популярные экскурсии</h3>
+          <p>
+            <a href="./pages/all_tours.html" class="link" target="_blank"
+              >Смотреть все</a
+            >
+          </p>
+        </div>
+
+        <div class="container_wrapper">
+          <div class="container_excursions-cards">
+            <div class="card1">
+              <div class="card-body">
+                <h5 class="card-title">Автобусный тур</h5>
+                <h4 class="class-title">Обзорная по Сочи (из Адлера)</h4>
+                <div class="card-text">
+                  <img src="../images/index/time.png" alt="time" />6 часов
+                  <img src="../images/index/money.png" alt="money" />618 Р
+                </div>
+                <p class="card-text">
+                  Приглашаем вас на экскурсию "Обзорная по Большому Сочи":
+                  Экскурсия начнется с подъёма на гору Большой Ахун - это высшая
+                  точка (665 метров) на побережьи Сочи. На вершине горы Большой
+                  Ахун есть смотровая башня, построенная в 1935-36 годах по
+                  проекту архитектора С. И. Воробьева...
+                </p>
+                <button>Подробнее</button>
+              </div>
+            </div>
+
+            <div class="card2">
+              <div class="card-body">
+                <h5 class="card-title">Конный тур</h5>
+                <h4 class="class-title">Конные прогулки</h4>
+                <div class="card-text">
+                  <img src="../images/index/time.png" alt="time" />1,5 часа<img
+                    src="../images/index/money.png"
+                    alt="money"
+                  />1 809 Р
+                </div>
+                <p class="card-text">
+                  Конные прогулки проходят в Лазурной долине. С долины
+                  открывается красивый вид на море, горы и лес. На всем пути
+                  следования экскурсии вас будут сопровождать опытные
+                  инструктора. Катание на лошадях или иппотерапия очень полезна
+                  для детей и взрослых...
+                </p>
+                <button>Подробнее</button>
+              </div>
+            </div>
+
+            <div class="card3">
+              <div class="card-body">
+                <h5 class="card-title">Квадротур</h5>
+                <h4 class="class-title">Пасть дракона</h4>
+                <div class="card-text">
+                  <img src="../images/index/time.png" alt="time" />2,5 часа<img
+                    src="../images/index/money.png"
+                    alt="money"
+                  />3 515 Р
+                </div>
+                <p class="card-text">
+                  Маршрут на Квадроциклах проходит по горной реке Мзымта вдоль
+                  белых скал и самшитовый лес к водопаду Глубокий Яр или "Пасть
+                  Дракона" (экскурсионное название). Высота водопада 41,5 метр -
+                  это один из самых высоких водопадов Большого Сочи...
+                </p>
+                <button>Подробнее</button>
+              </div>
+            </div>
+
+            <div class="card4">
+              <div class="card-body">
+                <h5 class="card-title">Автобусный тур</h5>
+                <h4 class="class-title">Женский монастырь</h4>
+                <div class="card-text">
+                  <img src="../images/index/time.png" alt="time" />4 часа
+                  <img src="../images/index/money.png" alt="money" />618 P
+                </div>
+                <p class="card-text">
+                  Троице - Георгиевский женский монастырь расположен в селе
+                  Лесное в живописном месте, в котором гармонично сочетаются
+                  красота природы и красота архитектуры сотворенная руками
+                  человека. Это удивительное место расположено совсем недалеко
+                  от Чёрного моря - всего в 20 километрах
+                </p>
+                <button>Подробнее</button>
+              </div>
+            </div>
+
+            <div class="card1">
+              <div class="card-body">
+                <h5 class="card-title">Автобусный тур</h5>
+                <h4 class="class-title">Обзорная по Сочи (из Адлера)</h4>
+                <div class="card-text">
+                  <img src="../images/index/time.png" alt="time" />6 часов
+                  <img src="../images/index/money.png" alt="money" />618 Р
+                </div>
+                <p class="card-text">
+                  Приглашаем вас на экскурсию "Обзорная по Большому Сочи":
+                  Экскурсия начнется с подъёма на гору Большой Ахун - это высшая
+                  точка (665 метров) на побережьи Сочи. На вершине горы Большой
+                  Ахун есть смотровая башня, построенная в 1935-36 годах по
+                  проекту архитектора С. И. Воробьева...
+                </p>
+                <button>Подробнее</button>
+              </div>
+            </div>
+
+            <div class="card2">
+              <div class="card-body">
+                <h5 class="card-title">Конный тур</h5>
+                <h4 class="class-title">Конные прогулки</h4>
+                <div class="card-text">
+                  <img src="../images/index/time.png" alt="time" />1,5 часа<img
+                    src="../images/index/money.png"
+                    alt="money"
+                  />1 809 Р
+                </div>
+                <p class="card-text">
+                  Конные прогулки проходят в Лазурной долине. С долины
+                  открывается красивый вид на море, горы и лес. На всем пути
+                  следования экскурсии вас будут сопровождать опытные
+                  инструктора. Катание на лошадях или иппотерапия очень полезна
+                  для детей и взрослых...
+                </p>
+                <button>Подробнее</button>
+              </div>
+            </div>
+
+            <div class="card3">
+              <div class="card-body">
+                <h5 class="card-title">Квадротур</h5>
+                <h4 class="class-title">Пасть дракона</h4>
+                <div class="card-text">
+                  <img src="../images/index/time.png" alt="time" />2,5 часа<img
+                    src="../images/index/money.png"
+                    alt="money"
+                  />3 515 Р
+                </div>
+                <p class="card-text">
+                  Маршрут на Квадроциклах проходит по горной реке Мзымта вдоль
+                  белых скал и самшитовый лес к водопаду Глубокий Яр или "Пасть
+                  Дракона" (экскурсионное название). Высота водопада 41,5 метр -
+                  это один из самых высоких водопадов Большого Сочи...
+                </p>
+                <button>Подробнее</button>
+              </div>
+            </div>
+
+            <div class="card4">
+              <div class="card-body">
+                <h5 class="card-title">Автобусный тур</h5>
+                <h4 class="class-title">Женский монастырь</h4>
+                <div class="card-text">
+                  <img src="../images/index/time.png" alt="time" />4 часа
+                  <img src="../images/index/money.png" alt="money" />618 P
+                </div>
+                <p class="card-text">
+                  Троице - Георгиевский женский монастырь расположен в селе
+                  Лесное в живописном месте, в котором гармонично сочетаются
+                  красота природы и красота архитектуры сотворенная руками
+                  человека. Это удивительное место расположено совсем недалеко
+                  от Чёрного моря - всего в 20 километрах
+                </p>
+                <button>Подробнее</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="img-leftRight-container">
+          <div class="img-leftRight">
+            <a href=""><img src="../images/index/лево право.svg" alt="" /></a>
+          </div>
+          <div class="img-leftRight">
+            <a href=""><img src="../images/index/ползунок.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="aboutUs">
+        <div class="aboutUs_img">
+          <img src="../images/index/5.svg" alt="img" class="aboutUs_picture" />
+        </div>
+
+        <div class="aboutUs_img2">
+          <img
+            src="../images/index/5(2).png"
+            alt="img"
+            class="aboutUs_picture2"
+          />
+        </div>
+
+        <div class="aboutUs_img3">
+          <img src="../images/index/5.png" alt="img" class="aboutUs_picture3" />
+        </div>
+        <div class="aboutUs_text">
+          <div class="aboutUs_text-container">
+            <div class="aboutUs_text-title">
+              <h2>О нас</h2>
+            </div>
+            <div class="aboutUs_text-text">
+              PeroTravel - Первый онлайн-сервис по бронированию экскурсий без
+              очередей и операторов. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Sed ut perspiciatis unde omnis iste natus error sit
+              voluptatem accusantium doloremque laudantium, totam rem aperiam,
+              eaque ipsa quae ab illo inventore veritatis et quasi architecto
+              beatae vitae dicta sunt explicabo.
+            </div>
+            <div class="aboutUs_text-textExtra">
+              PeroTravel - Первый онлайн-сервис по бронированию экскурсий без
+              очередей и операторов. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="excursionsTypes">
+        <div class="excursionsTypes_title">
+          <h2>Виды экскурсий</h2>
+        </div>
+        <div class="excursionsTypes_cards">
+          <div class="excursionsTypes_cards-bus">
+            <img src="../images/index/bus.png" alt="bus" />
+            <div class="cards-text">
+              <h3>Автобусный тур</h3>
+              <p>
+                Один из самых насыщенных впечатлениями, доступных по цене и
+                популярных видов отдыха. Во время одной поездки можно посмотреть
+                достопримечательности сразу нескольких городов, причем обойдется
+                это едва ли не в разы дешевле классического экскурсионного тура
+                с ночевками в отелях.
+              </p>
+            </div>
+          </div>
+
+          <div class="excursionsTypes_cards-jeep">
+            <img src="../images/index/jeep.png" alt="bus" />
+            <div class="cards-text">
+              <h3>Джиппинг</h3>
+              <p>
+                Это путешествие на автомобилях высокой проходимости с
+                преодолением естественных препятствий, это экстремальный вид
+                спорта и отдыха, представляющий собой прохождение туристического
+                маршрута по бездорожью на автомобилях.
+              </p>
+            </div>
+          </div>
+
+          <div class="excursionsTypes_cards-yacht">
+            <img src="../images/index/yacht.png" alt="bus" />
+            <div class="cards-text">
+              <h3>Яхтинг</h3>
+              <p>
+                Это то же, что круиз на лайнере или прогулка на пароме, только
+                на яхте больше свободы, размеры судна в разы меньше, нет
+                назойливой команды, можно самостоятельно почувствовать себя
+                капитаном, постоять за штурвалом. Именно здесь вы почувствуете
+                величайшие просторы Черногор моря.
+              </p>
+            </div>
+          </div>
+
+          <div class="excursionsTypes_cards-canyon">
+            <img src="../images/index/canyon.png" alt="bus" />
+            <div class="cards-text">
+              <h3>Каньонинг</h3>
+              <p>
+                Это экстремально-спортивный вид отдыха, который заключается в
+                преодолении каньонов (обводненных или нет) при помощи
+                альпинистского и иного снаряжения, а иногда и вброд, но без
+                лодок или иных плавсредств.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="excursionsTypes_bottom">
+          <p>
+            Выбирайте на нашем сайте экскурсию, которая подходит именно вам и
+            записывайтесь онлайн без очередей, просто и быстро!
+          </p>
+          <button>
+            <a href="./pages/all_tours.html" target="_blank"
+              >К экскурсиям <img src="../images/index/arrow.svg" alt=""
+            /></a>
+          </button>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <div class="gallery_head">
+          <h3>Галерея</h3>
+          <p><a href=".." class="link" target="_blank"> Смотреть все</a></p>
+        </div>
+        <div class="gallery_img">
+          <img src="./images/index/6.svg" alt="1" class="img img-1" />
+          <img src="./images/index/7.svg" alt="2" class="img img-2" />
+          <img src="./images/index/8.svg" alt="3" class="img img-3" />
+          <img src="./images/index/9.svg" alt="4" class="img img-4" />
+          <img src="./images/index/10.svg" alt="5" class="img img-5" />
+          <img src="./images/index/11.svg" alt="6" class="img img-6" />
+          <img src="./images/index/12.svg" alt="7" class="img img-7" />
+          <img src="./images/index/13.svg" alt="8" class="img img-8" />
+        </div>
+      </div>
+
+      <div class="feedback">
+        <div class="feedback_head">
+          <h3>Отзывы</h3>
+          <p><a href=".." class="link" target="_blank">Смотреть все</a></p>
+        </div>
+        <div class="container_feedback">
+          <div class="feedback_cards">
+            <div class="feedback_card1">
+              <div class="card_img">
+                <img src="../images/index/14.svg" alt="bus" class="card_img" />
+              </div>
+              <div class="cards-text">
+                <h4>Иван Иванов, 25 лет</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+
+            <div class="feedback_card2">
+              <div class="card_img">
+                <img src="../images/index/15.svg" alt="bus" class="card_img" />
+              </div>
+              <div class="cards-text">
+                <h4>Иван Иванов, 25 лет</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+
+            <div class="feedback_card1">
+              <div class="card_img">
+                <img src="../images/index/14.svg" alt="bus" class="card_img" />
+              </div>
+              <div class="cards-text">
+                <h4>Иван Иванов, 25 лет</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+
+            <div class="feedback_card2">
+              <div class="card_img">
+                <img src="../images/index/15.svg" alt="bus" class="card_img" />
+              </div>
+              <div class="cards-text">
+                <h4>Иван Иванов, 25 лет</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="img-leftRight-container">
+          <div class="img-leftRight">
+            <a href=""><img src="../images/index/лево право.svg" alt="" /></a>
+          </div>
+          <div class="img-leftRight">
+            <a href=""><img src="../images/index/ползунок.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footerForm">
+        <div class="questionForm">
+          <div class="table">
+            <h4>Остались вопросы?</h4>
+            <h5 class="form-group">Оставь заявку и мы ответим</h5>
+            <form action="#" method="#">
+              <div class="form-group">
+                <label for="name">Имя</label>
+                <input type="text" id="name" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" />
+              </div>
+              <div class="form-group">
+                <label for="email">Почта</label>
+                <input type="email" id="email" />
+              </div>
+              <button>Оставить заявку</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-container">
+        <div class="logoFooter">
+          <a href="index.html" target="_blank"
+            ><img class="imgLogo" src="../images/logo_color.svg" alt="Лого"
+          /></a>
+        </div>
+        <nav class="footer-column" class="navFooter">
+          <ul class="footer-items">
+            <li class="footer-item">
+              <a href="index.html" target="_blank">Главная</a>
+            </li>
+            <li class="footer-item">
+              <a href="./pages/all_tours.html" target="_blank">Экскурсии</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" target="_blank">Личный кабинет</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-column" id="contactsFooter">
+          <a href="#" target="_blank"
+            ><img
+              class="imgContacts"
+              src="../images/whatsapp.svg"
+              alt="Контакт whatsapp"
+            />+7 964 944 18 74</a
+          ><br />
+          <a href="#" target="_blank"
+            ><img
+              img
+              class="imgContacts"
+              src="../images/telegram.svg"
+              alt="Контакт telegram"
+            />+7 918 919 98 28</a
+          ><br />
+          <a href="#" target="_blank"
+            ><img
+              img
+              class="imgContacts"
+              src="../images/telegram2.svg"
+              alt="Контакт телеграм-бот"
+            />Телеграм-бот PeroTravel</a
+          ><br />
+        </div>
+        <div class="footer-column" id="mediaFooter">
+          <a href="#" target="_blank"
+            ><img
+              img
+              class="imgContacts"
+              src="../images/mail.svg"
+              alt="Контакт email"
+            />office@perotravel.ru</a
+          ><br />
+        </div>
+        <div class="media-container">
+          <a href="#" target="_blank"
+            ><img src="../images/vk_color.svg" alt="Контакт vk"
+          /></a>
+          <a href="#" target="_blank"
+            ><img src="../images/inst_color.svg" alt="Контакт instagram"
+          /></a>
+          <a href="#" target="_blank"
+            ><img src="../images/facebook_color.svg" alt="Контакт facebook"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
